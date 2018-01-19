@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+  </head>
+  <body>
+  <header class="header-main">
+    <div class="header-main__container">
+      <a class="logo header-main__logo" href="index.html">
+        <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+      <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
+    </div>
+    <nav class="header-main__nav">
+      <ul class="header-main__nav-items">
+        <li class="header-main__nav-item">
+          <a href="catalog.html" class="header-main__nav-link">Каталог товаров</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a class="header-main__nav-link">Вязание на заказ</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a href="#" class="header-main__nav-link">Поиск по сайту</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a href="#" class="header-main__nav-link">Корзина: <span>пока пуста</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <h1 class="title intro__title">Вязание на заказ</h1>
+    </section>
+    <form class="form-main" action="https://echo.htmlacademy.ru" method="post">
+      <p class="info-text form-main__info">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <div class="type form-main__items">
+        <h2 class="title-form type__title">тип</h2>
+        <p class="form-main__item">
+          <input id="radio1" class="type__input" type="radio" name="type">
+          <label class="type" for="radio1">Аксессуар для интерьера</label>
+        </p>
+        <p class="form-main__item">
+          <input id="radio2" class="type__input" type="radio" name="type">
+          <label class="type" for="radio2">Детская игрушка</label>
+        </p>
+      </div>
+      <div class="color form-main__items">
+        <h2 class="title-form color__title">цвет</h2>
+        <p class="form-main__item">
+          <input id="checkbox1" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox1" class="color__label">Белый</label>
+        </p>
+        <p class="form-main__item">
+          <input id="checkbox2" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox2" class="color__label">Серый</label>
+        </p>
+        <p class="form-main__item">
+          <input id="checkbox3" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox3" class="color__label">"Тиффани"</label>
+        </p>
+        <p class="form-main__item">
+          <input id="checkbox4" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox4" class="color__label">Чёрный</label>
+        </p>
+        <p class="form-main__item">
+          <input id="checkbox5" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox5" class="color__label">Розовый</label>
+        </p>
+        <p class="form-main__item">
+          <input id="checkbox6" class="color__input" type="checkbox" name="checkbox">
+          <label for="checkbox6" class="color__label">Оранжевый</label>
+        </p>
+      </div>
+      <div class="user-name form-main__items">
+        <h2 class="title-form user-name__title">фио</h2>
+        <p class="form-main__item">
+          <input id="text" class="user-name__input" type="text" placeholder="Введите ваше имя*" name="text" required>
+          <label for="text" class="user-name__label">Имя:</label>
+        </p>
+        <p class="form-main__item">
+          <input id="text2" class="user-name__input" type="text" placeholder="Укажите фамилию*" name="text" required>
+          <label for="text2" class="user-name__label">Фамилия:</label>
+        </p>
+        <p class="form-main__item">
+          <input id="text3" class="user-name__input" type="text" placeholder="Отчество, если желаете" name="text">
+          <label for="text3" class="user-name__label">Отчество:</label>
+        </p>
+      </div>
+      <div class="user-tel form-main__items">
+        <h2 class="title-form user-name__title">тел</h2>
+        <p class="form-main__item">
+          <input class="user-tel__input" type="tel" placeholder="+7 XXX XX XX*" name="tel" required>
+        </p>
+      </div>
+      <div class="user-email form-main__items">
+        <h2 class="title-form user-name__title">e-mail</h2>
+        <p class="form-main__item">
+          <input class="user-email__input" type="email" placeholder="Ваш Email*" name="email" required>
+        </p>
+      </div>
+      <div class="user-order form-main__items">
+        <h2 class="title-form user-name__title">доп</h2>
+        <p class="form-main__item">
+          <textarea class="user-order__input" placeholder="Опишите все ваши пожелания к заказу" name="textarea"></textarea>
+        </p>
+      </div>
+      <p class="info-text form-main__important">
+        *Поля обязательны для заполнения
+      </p>
+      <button class="button form-main__button" type="submit">отправить заказ</button>
+    </form>
+  </main>
+  <footer class="footer-main">
+    <ul class="social footer-main__social">
+      <li class="social__item">
+        <a class="social__item-link" href="#">
+          <img class="social__item-img social__item-img--in" src="http://placehold.it/150x100" alt="Инстаграм">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link" href="#">
+          <img class="social__item-img social__item-img--fb" src="http://placehold.it/150x100" alt="Фэйсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link" href="#">
+          <img class="social__item-img social__item-img--tw" src="http://placehold.it/150x100" alt="Твиттер">
+        </a>
+      </li>
+    </ul>
+    <a class="footer-main__address" href="#">
+      <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+    </a>
+  </footer>
+  </body>
+</html>
