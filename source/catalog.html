@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+  <header class="header-main">
+    <div class="header-main__container">
+      <a class="logo header-main__logo" href="index.html">
+        <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+      <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
+    </div>
+    <nav class="header-main__nav">
+      <ul class="header-main__nav-items">
+        <li class="header-main__nav-item">
+          <a class="header-main__nav-link">Каталог товаров</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a href="#" class="header-main__nav-link">Поиск по сайту</a>
+        </li>
+        <li class="header-main__nav-item">
+          <a href="#" class="header-main__nav-link">Корзина: <span>пока пуста</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <h1 class="title intro__title">Каталог товаров</h1>
+    </section>
+    <section class="catalog-items">
+      <article class="catalog-item catalog-items__item">
+        <img class="catalog-item__img" src="http://placehold.it/150x100" alt="Товар">
+        <h2 class="title catalog-item__title">Зайчик-попрыгайчик</h2>
+        <p class="catalog-item__size">Рост 30см, вес 200г</p>
+        <p class="price catalog-item__price">1200 руб.</p>
+      </article>
+      <article class="catalog-item catalog-items__item">
+        <img class="catalog-item__img" src="http://placehold.it/150x100" alt="Товар">
+        <h2 class="title catalog-item__title">Корзинка для белья</h2>
+        <p class="catalog-item__size">Диаметр 15см, высота 10см</p>
+        <p class="price catalog-item__price">690 руб.</p>
+      </article>
+      <article class="catalog-item catalog-items__item">
+        <img class="catalog-item__img" src="http://placehold.it/150x100" alt="Товар">
+        <h2 class="title catalog-item__title">Большая корзинка для игрушек</h2>
+        <p class="catalog-item__size">Диаметр 30см, высота 30см</p>
+        <p class="price catalog-item__price">1500 руб.</p>
+      </article>
+    </section>
+    <section class="process">
+      <h2 class="title process__title">Процесс производства</h2>
+      <div class="process__video"></div>
+      <p class="process__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <button class="button process__button" type="button">сделать заказ</button>
+    </section>
+  </main>
+  <footer class="footer-main">
+    <ul class="social footer-main__social">
+      <li class="social__item">
+        <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
+      </li>
+    </ul>
+    <a class="footer-main__address" href="#">
+      <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+    </a>
+  </footer>
+  <div class="modal-products">
+    <h2 class="title modal-products__title">добавить в корзину</h2>
+    <p class="modal-products__size">Выберите размер:</p>
+    <div class="modal-products__size-items">
+      <p class="modal-checkbox modal-products__size-item">
+        <input id="size-s" class="modal-checkbox__input" type="checkbox">
+        <label class="modal-checkbox__label modal-checkbox__label--size-s" for="size-s"><span>S</span></label>
+      </p>
+      <p class="modal-checkbox modal-products__size-item">
+        <input id="size-m" class="modal-checkbox__input" type="checkbox">
+        <label class="modal-checkbox__label modal-checkbox__label--size-m" for="size-m"><span>M</span></label>
+      </p>
+      <p class="modal-checkbox modal-products__size-item">
+        <input id="size-l" class="modal-checkbox__input" type="checkbox">
+        <label class="modal-checkbox__label modal-checkbox__label--size-l" for="size-l"><span>L</span></label>
+      </p>
+    </div>
+    <button class="button modal-products__button" type="button">добавить</button>
+  </div>
+  </body>
+</html>
