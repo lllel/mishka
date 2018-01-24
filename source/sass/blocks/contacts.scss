@@ -1,0 +1,21 @@
+.contacts {
+  outline: 3px solid red;
+}
+
+.contacts__wrapper {
+  @include wrapper();
+}
+
+.contacts__title {
+  font-size: $font-size-any-medium;
+  line-height: $line-height-big;
+  font-weight: $font-weight-bold;
+}
+
+.contacts__button {
+  margin-top: 50px;
+}
+
+.contacts__map img {
+  @include images-adaptive();
+}

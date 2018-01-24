@@ -1,0 +1,13 @@
+.slider-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.slider-buttons__item {
+  width: 50%;
+  height: 52px;
+  border: 1px solid $grey-color-hsl00;
+  background-color: transparent;
+}

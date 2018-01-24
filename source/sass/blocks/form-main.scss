@@ -1,0 +1,13 @@
+.form-main {
+  outline: 3px solid red;
+}
+
+.form-main__wrapper {
+  @include wrapper();
+}
+
+.form-main__info {
+  font-size: $font-size-smallest;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+}

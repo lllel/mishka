@@ -1,0 +1,30 @@
+.reviews-slider {
+  outline: 3px solid red;
+}
+
+.reviews-slider__wrapper {
+  @include wrapper();
+}
+
+.reviews-slider__text {
+  margin: 0;
+  font-size: $font-size-any-small;
+  line-height: $line-height-big;
+  color: $grey-color-hsl0;
+}
+
+.reviews-slider__user-name {
+  font-size: $font-size-small;
+  line-height: $line-height-small-big;
+  font-weight: $font-weight-bold;
+}
+
+.reviews-slider__user-email {
+  font-size: $font-size-small;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+}
+
+.reviews-slider__button {
+  margin-top: 50px;;
+}

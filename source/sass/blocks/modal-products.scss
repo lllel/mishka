@@ -1,0 +1,22 @@
+.modal-products__wrapper {
+  @include wrapper();
+}
+
+.modal-products__title {
+  width: 175px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.modal-products__size {
+  text-align: center;
+  font-size: $font-size-any-small;
+  line-height: $line-height-big;
+  color: $grey-color-hsl0;
+}
+
+.modal-products__size-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
