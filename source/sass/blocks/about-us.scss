@@ -1,0 +1,17 @@
+.about-us {
+  outline: 3px solid red;
+
+  @include wrapper();
+}
+
+.about-us__items {
+  padding: 0;
+}
+
+.about-us__item {
+  padding-bottom: 50px;
+  font-size: $font-size-small;
+  line-height: $line-height-medium;
+  font-weight: $font-weight-bold;
+  list-style-type: none;
+}

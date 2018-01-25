@@ -1,0 +1,31 @@
+.process {
+  outline: 3px solid red;
+}
+
+.process__wrapper {
+  @include wrapper();
+}
+
+.process__title {
+  text-align: left;
+  padding: 0 45px;
+  font-size: $font-size-small;
+  line-height: $line-height-small-big;
+  font-weight: $font-weight-bold;
+}
+
+.process__description {
+  font-size: $font-size-smallest;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+}
+
+.process__button {
+  max-width: 190px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.process__video {
+  text-align: center;
+}

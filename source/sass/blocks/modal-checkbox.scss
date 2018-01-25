@@ -1,0 +1,27 @@
+.modal-checkbox {
+  width: 30%;
+}
+
+.modal-checkbox__input {
+  @include visually-hidden();
+}
+
+.modal-checkbox__label {
+  display: flex;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid $grey-color-hsl00;
+}
+
+.modal-checkbox__label span {
+  margin: auto;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  font-weight: $font-weight-bold;
+}
+
+.modal-products__button {
+  border: none;
+  background-color: $green-color-hsl53;
+  color: $white-color;
+}

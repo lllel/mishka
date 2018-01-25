@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="header-main">
-    <div class="header-main__container">
+    <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
         <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
       </a>
@@ -31,21 +32,31 @@
   </header>
   <main class="main">
     <section class="intro">
-      <h1 class="title intro__title">Милые штуки ручной работы для дома</h1>
+      <div class="intro__bg">
+        <div class="intro__wrapper">
+          <h1 class="title intro__title">Милые штуки ручной работы для дома</h1>
+        </div>
+      </div>
       <div class="intro__items">
         <div class="intro__item intro__item--interior">
-          <p class="intro__item-description">Предметы интерьера</p>
+          <div class="intro__wrapper">
+            <p class="intro__item-description">Предметы интерьера</p>
+          </div>
         </div>
         <div class="intro__item intro__item--toys">
-          <p class="intro__item-description">Детские игрушки</p>
+          <div class="intro__wrapper">
+            <p class="intro__item-description">Детские игрушки</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="products">
-      <h2 class="title products__title">Вязаные корзинки</h2>
-      <p class="products__feature">Товар недели</p>
-      <div class="products__description">
-        <p class="products__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+      <div class="products__wrapper">
+        <h2 class="title products__title">Вязаные корзинки</h2>
+        <p class="products__feature">Товар недели</p>
+        <div class="products__description">
+          <p class="products__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+        </div>
         <table class="table-template products__info-table">
           <tr class="table-template__tr">
             <td class="table-template__td">Цвет:</td>
@@ -60,89 +71,104 @@
             <td class="table-template__td">15 см</td>
           </tr>
         </table>
+        <img class="products__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар">
+        <p class="products__price">Цена: 990 руб.</p>
+        <button class="button products__buy" type="button">заказать</button>
       </div>
-      <img class="products__img" src="http://placehold.it/150x100" alt="Товар">
-      <p class="products__price">990 руб.</p>
-      <button class="button products__buy" type="button">заказать</button>
     </section>
     <section class="about-us">
-      <h2 class="title about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__items">
-        <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
-        <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="about-us__wrapper">
+        <h2 class="title about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__items">
+          <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="reviews-slider">
-      <h2 class="title reviews-slider__title">Отзывы</h2>
-      <div class="reviews-slider__slide">
-        <blockquote class="reviews-slider__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </blockquote>
-        <p class="title reviews-slider__user-name">Анастасия Красильникова</p>
-        <p class="reviews-slider__user-email">@misssssiskras</p>
-      </div>
-      <div class="reviews-slider__rest">
-        <div class="slider-buttons reviews-slider__buttons">
-          <button class="slider-buttons__item slider-buttons__item--left" type="button"></button>
-          <button class="slider-buttons__item slider-buttons__item--right" type="button"></button>
+      <div class="reviews-slider__wrapper">
+        <h2 class="title reviews-slider__title">Отзывы</h2>
+        <div class="reviews-slider__slide">
+          <blockquote class="reviews-slider__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </blockquote>
+          <p class="reviews-slider__user-name">Анастасия Красильникова</p>
+          <p class="reviews-slider__user-email">@misssssiskras</p>
         </div>
-        <a class="button reviews-slider__button" href="#">написать</a>
+        <div class="reviews-slider__rest">
+          <div class="slider-buttons reviews-slider__buttons">
+            <button class="slider-buttons__item slider-buttons__item--left" type="button"></button>
+            <button class="slider-buttons__item slider-buttons__item--right" type="button"></button>
+          </div>
+          <a class="button reviews-slider__button" href="#">написать</a>
+        </div>
       </div>
     </section>
     <section class="contacts">
-      <h3 class="title contacts__title">Контакты</h3>
-      <table class="table-template contacts__info-table">
-        <tr class="table-template__tr">
-          <td class="table-template__td">e-mail:</td>
-          <td class="table-template__td">info@mimimishkashop.ru</td>
-        </tr>
-        <tr class="table-template__tr">
-          <td class="table-template__td">адрес:</td>
-          <td class="table-template__td">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</td>
-        </tr>
-      </table>
-      <div id="map" class="map contacts__map"></div>
-      <a class="button contacts__button" href="#">напишите нам</a>
+      <div class="contacts__wrapper">
+        <h3 class="contacts__title">Контакты</h3>
+        <table class="table-template contacts__info-table">
+          <tr class="table-template__tr">
+            <td class="table-template__td">e-mail:</td>
+            <td class="table-template__td">info@mimimishkashop.ru</td>
+          </tr>
+          <tr class="table-template__tr">
+            <td class="table-template__td">адрес:</td>
+            <td class="table-template__td">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</td>
+          </tr>
+        </table>
+      </div>
+        <div id="map" class="map contacts__map">
+          <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
+        </div>
+      <div class="contacts__wrapper">
+        <a class="button contacts__button" href="#">напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="footer-main">
-    <ul class="social footer-main__social">
-      <li class="social__item">
-        <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
-      </li>
-      <li class="social__item">
-        <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
-      </li>
-      <li class="social__item">
-        <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
-      </li>
-    </ul>
-    <a class="footer-main__address" href="#">
-      <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
-    </a>
+    <div class="footer-main__wrapper">
+      <ul class="social footer-main__social">
+        <li class="social__item">
+          <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
+        </li>
+      </ul>
+      <a class="footer-main__address" href="#">
+        Разработано
+        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+    </div>
   </footer>
   <div class="modal-products">
-    <h2 class="title modal-products__title">добавить в корзину</h2>
-    <p class="modal-products__size">Выберите размер:</p>
-    <div class="modal-products__size-items">
-      <p class="modal-checkbox modal-products__size-item">
-        <input id="size-s" class="modal-checkbox__input" type="checkbox">
-        <label class="modal-checkbox__label modal-checkbox__label--size-s" for="size-s"><span>S</span></label>
-      </p>
-      <p class="modal-checkbox modal-products__size-item">
-        <input id="size-m" class="modal-checkbox__input" type="checkbox">
-        <label class="modal-checkbox__label modal-checkbox__label--size-m" for="size-m"><span>M</span></label>
-      </p>
-      <p class="modal-checkbox modal-products__size-item">
-        <input id="size-l" class="modal-checkbox__input" type="checkbox">
-        <label class="modal-checkbox__label modal-checkbox__label--size-l" for="size-l"><span>L</span></label>
-      </p>
+    <div class="modal-products__wrapper">
+      <h2 class="title modal-products__title">добавить в корзину</h2>
+      <p class="modal-products__size">Выберите размер:</p>
+      <div class="modal-products__size-items">
+        <p class="modal-checkbox modal-products__size-item">
+          <input id="size-s" class="modal-checkbox__input" type="checkbox">
+          <label class="modal-checkbox__label modal-checkbox__label--size-s" for="size-s"><span>S</span></label>
+        </p>
+        <p class="modal-checkbox modal-products__size-item">
+          <input id="size-m" class="modal-checkbox__input" type="checkbox">
+          <label class="modal-checkbox__label modal-checkbox__label--size-m" for="size-m"><span>M</span></label>
+        </p>
+        <p class="modal-checkbox modal-products__size-item">
+          <input id="size-l" class="modal-checkbox__input" type="checkbox">
+          <label class="modal-checkbox__label modal-checkbox__label--size-l" for="size-l"><span>L</span></label>
+        </p>
+      </div>
+      <button class="button modal-products__button" type="button">добавить</button>
     </div>
-    <button class="button modal-products__button" type="button">добавить</button>
   </div>
   </body>
 </html>

@@ -1,0 +1,11 @@
+.table-template {
+  margin: 0 auto;
+  font-size: $font-size-any-small;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+  border-collapse: collapse;
+}
+
+.table-template__td {
+  border-bottom: 1px solid $grey-color-hsl00;
+}

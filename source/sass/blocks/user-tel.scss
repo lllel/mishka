@@ -1,0 +1,32 @@
+.user-tel__title {
+  text-transform: uppercase;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  font-weight: $font-weight-bold;
+  color: $green-color-hsl53;
+}
+
+.user-tel__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.user-tel__label {
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  font-weight: $font-weight-bold;
+}
+
+.user-tel__input {
+  padding: 20px 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid $black-color;
+
+  &::placeholder {
+    font-size: $font-size-small;
+    line-height: $line-height-any-small;
+    color: $grey-color-hsl00;
+  }
+}

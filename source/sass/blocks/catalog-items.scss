@@ -1,0 +1,7 @@
+.catalog-items {
+  outline: 3px solid red;
+}
+
+.catalog-items__wrapper {
+  @include wrapper();
+}
