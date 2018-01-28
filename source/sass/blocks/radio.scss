@@ -24,3 +24,10 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .radio__label {
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+  }
+}

@@ -14,21 +14,32 @@
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
     <nav class="header-main__nav">
-      <ul class="header-main__nav-items">
-        <li class="header-main__nav-item">
-          <a href="catalog.html" class="header-main__nav-link">Каталог товаров</a>
+      <ul class="site-nav header-main__nav-items header-main__nav-items--site">
+        <li class="site-nav__item">
+          <a class="site-nav__link">Каталог товаров</a>
         </li>
-        <li class="header-main__nav-item">
-          <a href="form.html" class="header-main__nav-link">Вязание на заказ</a>
+        <li class="site-nav__item">
+          <a href="form.html" class="site-nav__link">Вязание на заказ</a>
         </li>
-        <li class="header-main__nav-item">
-          <a href="#" class="header-main__nav-link">Поиск по сайту</a>
+      </ul>
+      <ul class="user-nav header-main__nav-items">
+        <li class="user-nav__item">
+          <a href="#" class="user-nav__link">Поиск по сайту</a>
         </li>
-        <li class="header-main__nav-item">
-          <a href="#" class="header-main__nav-link">Корзина: <span>пока пуста</span></a>
+        <li class="user-nav__item">
+          <a href="#" class="user-nav__link">Корзина: <span>пока пуста</span></a>
+        </li>
+      </ul>
+      <ul class="additional-nav header-main__nav-items--additional">
+        <li class="additional-nav__item">
+          <a href="#" class="additional-nav__link">Новые поступления</a>
+        </li>
+        <li class="additional-nav__item">
+          <a href="#" class="additional-nav__link">Распродажа</a>
         </li>
       </ul>
     </nav>
+    <a href="#" class="header-main__delivery">Бесплатная доставка по России</a>
   </header>
   <main class="main">
     <section class="intro intro--height">
@@ -38,21 +49,27 @@
       <div class="catalog-items__wrapper">
         <article class="catalog-item catalog-items__item">
           <img class="catalog-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Товар">
-          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
-          <p class="catalog-item__size">Рост 30см, вес 200г</p>
-          <p class="catalog-item__price">1200 руб.</p>
+          <div class="catalog-items__wrapper catalog-items__wrapper--description">
+            <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+            <p class="catalog-item__size">Рост 30см, вес 200г</p>
+            <p class="catalog-item__price">1200 руб.</p>
+          </div>
         </article>
         <article class="catalog-item catalog-items__item">
           <img class="catalog-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Товар">
-          <h2 class="catalog-item__title">Корзинка для белья</h2>
-          <p class="catalog-item__size">Диаметр 15см, высота 10см</p>
-          <p class="catalog-item__price">690 руб.</p>
+          <div class="catalog-items__wrapper catalog-items__wrapper--description">
+            <h2 class="catalog-item__title">Корзинка для белья</h2>
+            <p class="catalog-item__size">Диаметр 15см, высота 10см</p>
+            <p class="catalog-item__price">690 руб.</p>
+          </div>
         </article>
         <article class="catalog-item catalog-items__item">
           <img class="catalog-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Товар">
-          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
-          <p class="catalog-item__size">Диаметр 30см, высота 30см</p>
-          <p class="catalog-item__price">1500 руб.</p>
+          <div class="catalog-items__wrapper catalog-items__wrapper--description">
+            <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+            <p class="catalog-item__size">Диаметр 30см, высота 30см</p>
+            <p class="catalog-item__price">1500 руб.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -62,15 +79,20 @@
         <div class="process__video">
           <img class="process__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео">
         </div>
-        <p class="process__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <button class="button process__button" type="button">сделать заказ</button>
+        <div class="process__container">
+          <p class="process__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <button class="button process__button" type="button">сделать заказ</button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer-main">
     <div class="footer-main__wrapper">
+      <a class="footer-main__logo footer-main__logo--site-logo" href="#">
+        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
       <ul class="social footer-main__social">
         <li class="social__item">
           <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
@@ -84,7 +106,7 @@
       </ul>
       <a class="footer-main__address" href="#">
         Разработано
-        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="footer-main__logo footer-main__logo--academy" src="http://placehold.it/150x100" alt="Логотип">
       </a>
     </div>
   </footer>

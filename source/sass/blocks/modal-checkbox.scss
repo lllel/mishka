@@ -25,3 +25,28 @@
   background-color: $green-color-hsl53;
   color: $white-color;
 }
+
+@media (min-width: $tablet-width) {
+  .modal-checkbox {
+    width: auto;
+  }
+
+  .modal-checkbox__label {
+    width: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .modal-products__button {
+    width: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal-products__size-items {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

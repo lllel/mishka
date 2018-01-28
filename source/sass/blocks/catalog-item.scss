@@ -20,3 +20,34 @@
   margin-top: 50px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item__price {
+    text-align: left;
+    margin-top: 200px;
+  }
+
+  .catalog-item__size {
+    text-align: left;
+    font-size: $font-size-any-small;
+    line-height: $line-height-big;
+  }
+
+  .catalog-item__title {
+    text-align: left;
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item__price {
+    margin-top: 50px;
+    font-size: $font-size-small;
+  }
+
+  .catalog-item__title {
+    width: 235px;
+  }
+}

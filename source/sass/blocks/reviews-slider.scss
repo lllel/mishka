@@ -28,3 +28,52 @@
 .reviews-slider__button {
   margin-top: 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews-slider {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews-slider__slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .slider-buttons.reviews-slider__buttons {
+    align-items: center;
+    width: 50%;
+  }
+
+  .reviews-slider__container {
+    width: 50%;
+  }
+
+  .reviews-slider__button {
+    width: 175px;
+    padding: 10px;
+    order: -1;
+    margin-top: 50px;
+    margin-bottom: -60px;
+    margin-right: 0;
+  }
+
+  .reviews-slider__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-slider__text {
+    width: 85%;
+    font-size: $font-size-small;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-slider {
+    margin: 0 100px;
+    padding-left: 175px;
+  }
+}

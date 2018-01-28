@@ -2,6 +2,39 @@
   outline: 3px solid red;
 }
 
+.catalog-items__item {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalog-items__wrapper {
   @include wrapper();
+
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-items__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-items__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog-items__wrapper--description {
+    flex-direction: column;
+  }
+
+  .catalog-items__item {
+    min-height: 465px;
+    flex-direction: column;
+  }
 }
