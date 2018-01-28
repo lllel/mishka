@@ -26,6 +26,10 @@
     padding-left: 145px;
   }
 
+  .color__container {
+    width: 100%;
+  }
+
   .color__item {
     width: 30%;
   }
@@ -42,10 +46,16 @@
   }
 
   .color__title {
-    left: 50px;
+    position: static;
   }
 
   .color__item {
     width: 25%;
+  }
+
+  .color__container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 }

@@ -26,15 +26,26 @@
     position: absolute;
     margin-top: 40px;
   }
+
+  .type__container {
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .type__title {
-    left: 50px;
+    position: static;
   }
 
   .type__wrapper {
     width: 700px;
     padding-left: 30px;
+  }
+
+  .type__container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 }

@@ -124,8 +124,14 @@
     margin: 0 auto;
   }
 
+  .contacts__container-all {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+  }
+
   .contacts__title {
-    margin-left: 330px;
     margin-right: -300px;
     width: auto;
     font-size: $font-size-very-big;

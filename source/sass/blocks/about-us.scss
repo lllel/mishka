@@ -57,7 +57,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    max-width: 100%;
+  }
+
   .about-us__wrapper {
-    padding: 0 275px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 115px;
   }
 }

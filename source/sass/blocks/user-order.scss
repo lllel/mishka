@@ -34,6 +34,10 @@
     padding-left: 243px;
   }
 
+  .user-order__container {
+    width: 100%;
+  }
+
   .user-order__title {
     position: absolute;
     margin-top: 20px;
@@ -49,7 +53,7 @@
 
 @media (min-width: $desktop-width) {
   .user-order__title {
-    left: 50px;
+    position: static;
   }
 
   .user-order__wrapper {
@@ -58,5 +62,11 @@
 
   .user-order__input {
     overflow-y: hidden;
+  }
+
+  .user-order__container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 }

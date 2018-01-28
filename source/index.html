@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -126,23 +127,26 @@
       </div>
     </section>
     <section class="contacts">
-      <h3 class="contacts__title">Контакты</h3>
-      <div class="contacts__container">
-        <div class="contacts__wrapper contacts__wrapper--info">
-          <div class="contacts__email">
-            <p class="contacts__type">e-mail: </p>
-            <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+      <div class="contacts__container-all">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__container">
+          <div class="contacts__wrapper contacts__wrapper--info">
+            <div class="contacts__email">
+              <p class="contacts__type">e-mail: </p>
+              <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__address">
+              <p class="contacts__type">адрес: </p>
+              <p class="contacts__text">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+            </div>
           </div>
-          <div class="contacts__address">
-            <p class="contacts__type">адрес: </p>
-            <p class="contacts__text">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+          <div id="map" class="map contacts__map">
+            <img class="map__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
           </div>
+          <a class="button contacts__button" href="#">напишите нам</a>
         </div>
-        <div id="map" class="map contacts__map">
-          <img class="map__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
-        </div>
-        <a class="button contacts__button" href="#">напишите нам</a>
       </div>
+
     </section>
   </main>
   <footer class="footer-main">

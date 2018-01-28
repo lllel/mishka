@@ -58,6 +58,10 @@
     padding-left: 243px;
   }
 
+  .user-tel__container {
+    width: 100%;
+  }
+
   .user-tel__title {
     position: absolute;
     margin-top: 20px;
@@ -66,10 +70,16 @@
 
 @media (min-width: $desktop-width) {
   .user-tel__title {
-    left: 50px;
+    position: static;
   }
 
   .user-tel__wrapper {
     padding-left: 30px;
+  }
+
+  .user-tel__container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 }

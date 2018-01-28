@@ -80,6 +80,8 @@
 @media (min-width: $desktop-width) {
   .header-main {
     padding: 0;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .header-main__wrapper {
@@ -92,24 +94,23 @@
   }
 
   .header-main__nav-items {
-    padding-right: 100px;
+    padding-right: 50px;
   }
 
   .header-main__nav-items--site {
     position: absolute;
     top: 0;
-    left: 100px;
     padding: 0;
   }
 
   .header-main__nav-items--additional {
     position: absolute;
     top: 85px;
-    left: 100px;
+    left: 50px;
     padding: 0;
   }
 
   .header-main__delivery {
-    right: 100px;
+    right: 50px;
   }
 }
