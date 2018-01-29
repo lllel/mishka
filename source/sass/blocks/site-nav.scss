@@ -19,12 +19,9 @@
 
 @media (min-width: $tablet-width) {
   .site-nav {
+    display: flex;
     flex-direction: row;
-    margin-right: auto;
-  }
-
-  .site-nav__item {
-    margin-right: 50px;
+    order: 3;
   }
 
   .site-nav__link {
@@ -35,6 +32,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-nav {
+    justify-content: flex-start;
+    width: calc(50% - 125px);
+    order: 1;
+  }
+
   .site-nav__link {
     font-size: $font-size-small;
     line-height: $line-height-small-big;

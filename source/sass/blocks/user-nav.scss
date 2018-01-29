@@ -21,11 +21,19 @@
   .user-nav {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    z-index: 5;
+    order: 2;
+    width: calc(100% - 250px);
+    justify-content: flex-end;
   }
 
   .user-nav__item {
     margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    justify-content: flex-end;
+    width: calc(50% - 125px);
   }
 }

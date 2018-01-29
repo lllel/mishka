@@ -15,10 +15,7 @@
   .additional-nav {
     display: flex;
     flex-direction: row;
+    order: 3;
     z-index: 5;
-  }
-
-  .additional-nav__item {
-    margin-right: 45px;
   }
 }
