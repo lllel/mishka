@@ -24,10 +24,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-items__wrapper {
+    @include wrapper();
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
   }
 
   .catalog-items__wrapper--description {

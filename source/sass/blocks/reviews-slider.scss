@@ -4,6 +4,9 @@
 
 .reviews-slider__wrapper {
   @include wrapper();
+
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews-slider__text {
@@ -27,19 +30,18 @@
 
 .reviews-slider__button {
   margin-top: 50px;
+  order: 1;
 }
 
 @media (min-width: $tablet-width) {
-  //.reviews-slider {
-  //  background-image: url("../img/review@1x.jpg");
-  //  background-repeat: no-repeat;
-  //  background-position: left;
-  //}
-
   .reviews-slider__slide {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .reviews-slider__title {
+    order: -1;
   }
 
   .slider-buttons.reviews-slider__buttons {
@@ -55,14 +57,15 @@
     width: 175px;
     padding: 10px;
     order: -1;
-    margin-top: 50px;
-    margin-bottom: -60px;
+    margin-top: 0;
     margin-right: 0;
   }
 
   .reviews-slider__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -75,10 +78,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  //.reviews-slider {
-  //  padding-left: 175px;
-  //}
-
   .reviews-slider__wrapper {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;

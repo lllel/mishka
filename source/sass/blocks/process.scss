@@ -4,11 +4,14 @@
 
 .process__wrapper {
   @include wrapper();
+
+  position: relative;
 }
 
 .process__title {
   text-align: left;
   padding: 0 45px;
+  margin-bottom: 200px;
   font-size: $font-size-small;
   line-height: $line-height-small-big;
   font-weight: $font-weight-bold;
@@ -27,13 +30,18 @@
 }
 
 .process__video {
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%);
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .process__video {
+    position: relative;
+    width: 100%;
     height: 455px;
-    order: -1;
   }
 
   .process__wrapper {
@@ -48,6 +56,7 @@
   }
 
   .process__title {
+    margin-bottom: 0;
     font-size: $font-size-medium-big;
     line-height: $line-height-small-big;
   }
@@ -74,13 +83,14 @@
   }
 
   .process__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
     width: 700px;
   }
 
   .process__title {
-    position: absolute;
-    top: 50px;
-    right: 250px;
     width: 200px;
     padding: 0;
   }
