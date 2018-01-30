@@ -20,3 +20,25 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .modal-products {
+    width: 570px;
+    margin: 0 auto;
+  }
+
+  .modal-products__wrapper {
+    padding: 50px 0;
+  }
+
+  .modal-products__title {
+    width: auto;
+    text-align: center;
+    font-size: $font-size-biggest;
+    line-height: $line-height-biggest;
+  }
+
+  .modal-products__size {
+    font-size: $font-size-small;
+  }
+}

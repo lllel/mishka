@@ -15,3 +15,55 @@
   font-weight: $font-weight-bold;
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 40%;
+    margin-right: 40px;
+    font-size: $font-size-medium-big;
+    line-height: $line-height-any-medium;
+  }
+
+  .about-us__item--flower {
+    order: 1;
+  }
+
+  .about-us__item--clew {
+    order: 2;
+  }
+
+  .about-us__item--money {
+    order: 3;
+  }
+
+  .about-us__item--rocket {
+    order: 4;
+  }
+
+  .about-us__item--heart {
+    order: 5;
+  }
+
+  .about-us__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    max-width: 100%;
+  }
+
+  .about-us__wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 115px;
+  }
+}

@@ -9,6 +9,10 @@
   @include wrapper();
 }
 
+.footer-main__logo--site-logo {
+  display: none;
+}
+
 .footer-main__address {
   display: flex;
   flex-direction: row;
@@ -31,4 +35,20 @@
 .form-main__button {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-main__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-main__logo--site-logo {
+    display: block;
+  }
+
+  .footer-main__address {
+    margin-top: 0;
+  }
 }

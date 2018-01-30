@@ -1,5 +1,51 @@
 .contacts {
   outline: 3px solid red;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts__link {
+  margin-top: 15px;
+  font-size: $font-size-any-small;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+  text-decoration: none;
+}
+
+.contacts__text {
+  width: 200px;
+  font-size: $font-size-any-small;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+}
+
+.contacts__type {
+  margin-right: 30px;
+  font-size: $font-size-any-small;
+  line-height: $line-height-small-big;
+  color: $grey-color-hsl0;
+}
+
+.contacts__email {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .contacts__wrapper {
@@ -7,15 +53,90 @@
 }
 
 .contacts__title {
+  width: 100%;
+  margin-left: 40px;
   font-size: $font-size-any-medium;
   line-height: $line-height-big;
   font-weight: $font-weight-bold;
 }
 
 .contacts__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
   margin-top: 50px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
 }
 
 .contacts__map img {
   @include images-adaptive();
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    font-size: $font-size-any-big;
+    line-height: $line-height-any-big;
+  }
+
+  .contacts__button {
+    width: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contacts__link {
+    margin-top: 17px;
+    font-size: $font-size-small;
+  }
+
+  .contacts__text {
+    font-size: $font-size-small;
+  }
+
+  .contacts__type {
+    font-size: $font-size-small;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__map {
+    margin-right: auto;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .contacts__title {
+    width: auto;
+    font-size: $font-size-very-big;
+    line-height: $line-height-biggest;
+  }
+
+  .contacts__button {
+    position: static;
+    transform: translateX(0);
+  }
 }

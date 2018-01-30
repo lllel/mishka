@@ -1,6 +1,8 @@
-$mobile-padding: 30px;
+//$breakpoint-padding: 30px;
 
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1250px;
 
 $black-color: #000000;
 $white-color: #ffffff;
@@ -10,8 +12,12 @@ $grey-color-hsl0: #444444;
 $grey-color-hsl00: #ececec;
 $grey-color-hs0-95: #f1f1f1;
 
+$font-size-very-big: 53px;
+$font-size-any-big: 43px;
+$font-size-biggest: 30px;
 $font-size-big: 27px;
 $font-size-small-big: 25px;
+$font-size-medium-big: 20px;
 $font-size-medium: 19px;
 $font-size-any-medium: 18px;
 $font-size-small: 17px;
@@ -22,8 +28,12 @@ $font-size-smallest: 13px;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
+$line-height-biggest: 57px;
+$line-height-any-big: 50px;
 $line-height-big: 30px;
 $line-height-small-big: 24px;
+$line-height-any-medium: 22px;
 $line-height-medium: 20px;
+$line-height-medium-small: 17px;
 $line-height-any-small: 18px;
 $line-height-smallest: 16px;

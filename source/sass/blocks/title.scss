@@ -3,3 +3,18 @@
   line-height: $line-height-big;
   font-weight: $font-weight-bold;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: $font-size-any-big;
+    line-height: $line-height-any-big;
+    font-weight: $font-weight-bold;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: $font-size-very-big;
+    line-height: $line-height-biggest;
+  }
+}

@@ -4,11 +4,14 @@
 
 .process__wrapper {
   @include wrapper();
+
+  position: relative;
 }
 
 .process__title {
   text-align: left;
   padding: 0 45px;
+  margin-bottom: 200px;
   font-size: $font-size-small;
   line-height: $line-height-small-big;
   font-weight: $font-weight-bold;
@@ -27,5 +30,68 @@
 }
 
 .process__video {
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%);
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .process__video {
+    position: relative;
+    width: 100%;
+    height: 455px;
+  }
+
+  .process__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .process__button {
+    max-width: 100%;
+  }
+
+  .process__title {
+    margin-bottom: 0;
+    font-size: $font-size-medium-big;
+    line-height: $line-height-small-big;
+  }
+
+  .process__description {
+    font-size: $font-size-any-small;
+    line-height: $line-height-big;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process__wrapper {
+    position: relative;
+    width: 1250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process__container {
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: 50px;
+  }
+
+  .process__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 700px;
+  }
+
+  .process__title {
+    width: 200px;
+    padding: 0;
+  }
 }

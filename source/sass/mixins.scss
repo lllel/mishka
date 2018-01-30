@@ -1,8 +1,3 @@
-@mixin wrapper() {
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
-}
-
 @mixin images-adaptive() {
   width: 100%;
   height: auto;
@@ -19,4 +14,21 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin wrapper() {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }

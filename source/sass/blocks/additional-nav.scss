@@ -1,0 +1,21 @@
+.additional-nav {
+  display: none;
+  list-style-type: none;
+}
+
+.additional-nav__link {
+  font-size: $font-size-any-small;
+  line-height: $line-height-small-big;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  color: $black-color;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-nav {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    z-index: 5;
+  }
+}

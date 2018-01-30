@@ -4,6 +4,9 @@
 
 .reviews-slider__wrapper {
   @include wrapper();
+
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews-slider__text {
@@ -27,4 +30,57 @@
 
 .reviews-slider__button {
   margin-top: 50px;
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-slider__slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reviews-slider__title {
+    order: -1;
+  }
+
+  .slider-buttons.reviews-slider__buttons {
+    align-items: center;
+    width: 50%;
+  }
+
+  .reviews-slider__container {
+    width: 50%;
+  }
+
+  .reviews-slider__button {
+    width: 175px;
+    padding: 10px;
+    order: -1;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .reviews-slider__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews-slider__text {
+    width: 85%;
+    font-size: $font-size-small;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-slider__wrapper {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
 }
