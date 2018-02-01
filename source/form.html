@@ -10,7 +10,7 @@
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
-        <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
@@ -18,16 +18,17 @@
       <li class="site-nav__item">
         <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
       </li>
-      <li class="site-nav__item">
+      <li class="site-nav__item ">
         <a class="site-nav__link">Вязание на заказ</a>
       </li>
     </ul>
     <ul class="user-nav header-main__nav-items">
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Поиск по сайту</a>
+      <li class="user-nav__item user-nav__item--decoration">
+        <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
+          <img class="user-nav__item-img" src="img/icon-search.svg"></a>
       </li>
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Корзина: <span>пока пуста</span></a>
+      <li class="user-nav__item user-nav__item--basket">
+        <a href="#" class="user-nav__link">Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
       </li>
     </ul>
     <ul class="additional-nav">
@@ -42,7 +43,7 @@
   </header>
   <main class="main">
     <section class="intro intro--height">
-      <h1 class="title intro__title">Вязание на заказ</h1>
+      <h1 class="title intro__title intro__title--padding">Вязание на заказ</h1>
     </section>
     <form class="form-main" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-main__info">
@@ -77,7 +78,7 @@
             </p>
             <p class="checkbox color__item">
               <input id="checkbox3" class="checkbox__input" type="checkbox" name="checkbox">
-              <label for="checkbox3" class="checkbox__label">"Тиффани"</label>
+              <label for="checkbox3" class="checkbox__label">«Тиффани»</label>
             </p>
             <p class="checkbox color__item">
               <input id="checkbox4" class="checkbox__input" type="checkbox" name="checkbox">
@@ -151,25 +152,31 @@
       </div>
     </form>
   </main>
-  <footer class="footer-main">
+  <footer class="footer-main footer-main--form">
     <div class="footer-main__wrapper">
-      <a class="footer-main__logo footer-main__logo--site-logo" href="#">
-        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      <a class="footer-main__logo footer-main__logo--site-logo" href="index.html">
+        <img class="footer-main__logo" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <ul class="social footer-main__social">
         <li class="social__item">
-          <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--in" href="#">
+            <img class="social__item-img social__item-img--in" src="img/icon-insta.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--fb" href="#">
+            <img class="social__item-img social__item-img--fb" src="img/icon-fb.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--tw" href="#">
+            <img class="social__item-img social__item-img--tw" src="img/icon-twitter.svg">
+          </a>
         </li>
       </ul>
       <a class="footer-main__address" href="#">
         Разработано
-        <img class="footer-main__logo footer-main__logo--academy" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="footer-main__logo footer-main__logo--academy" src="img/logo-htmlacademy.svg" alt="Логотип">
       </a>
     </div>
   </footer>

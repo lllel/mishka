@@ -11,7 +11,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 30px 0;
+  padding: 26px 0;
   text-align: center;
   color: $black-color;
   text-decoration: none;
@@ -22,10 +22,17 @@
     display: flex;
     flex-direction: row;
     order: 3;
+    margin-left: 49px;
     z-index: 5;
   }
 
+  .site-nav__item {
+    margin-right: 37px;
+    border: none;
+  }
+
   .site-nav__link {
+    padding: 19px 0;
     font-size: $font-size-any-small;
     line-height: $line-height-small-big;
     font-weight: $font-weight-bold;
@@ -35,11 +42,27 @@
 @media (min-width: $desktop-width) {
   .site-nav {
     justify-content: flex-start;
+    align-items: center;
     width: calc(50% - 125px);
+    height: 100%;
     order: 1;
+    margin-left: 0;
+  }
+
+  .site-nav__item {
+    margin-right: 33px;
+    padding-right: 35px;
+    border-right: 1px solid #ececec;
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+    }
   }
 
   .site-nav__link {
+    padding: 32px 0;
     font-size: $font-size-small;
     line-height: $line-height-small-big;
     font-weight: $font-weight-bold;

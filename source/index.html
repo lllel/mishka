@@ -10,7 +10,7 @@
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo">
-        <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
@@ -18,16 +18,17 @@
       <li class="site-nav__item">
         <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
       </li>
-      <li class="site-nav__item">
+      <li class="site-nav__item ">
         <a href="form.html" class="site-nav__link">Вязание на заказ</a>
       </li>
     </ul>
     <ul class="user-nav header-main__nav-items">
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Поиск по сайту</a>
+      <li class="user-nav__item user-nav__item--decoration">
+        <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
+        <img class="user-nav__item-img" src="img/icon-search.svg"></a>
       </li>
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Корзина: <span>пока пуста</span></a>
+      <li class="user-nav__item user-nav__item--basket">
+        <a href="#" class="user-nav__link">Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
       </li>
     </ul>
     <ul class="additional-nav">
@@ -43,7 +44,7 @@
   <main class="main">
     <section class="intro">
       <div class="intro__wrapper">
-        <h1 class="title intro__title">Милые штуки ручной работы для дома</h1>
+        <h1 class="title intro__title">Милые штуки <span>ручной</span> работы для дома</h1>
       </div>
       <div class="intro__items">
         <div class="intro__item intro__item--interior">
@@ -62,16 +63,14 @@
       <h2 class="title products__title">Вязаные корзинки</h2>
       <p class="products__feature">Товар недели</p>
       <div class="products__container-all">
-
         <div class="products__wrapper">
-
           <div class="products__description">
             <p class="products__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
           </div>
           <table class="table-template products__info-table">
             <tr class="table-template__tr">
               <td class="table-template__td">Цвет:</td>
-              <td class="table-template__td">Тиффани/серый</td>
+              <td class="table-template__td">«Тиффани/серый»</td>
             </tr>
             <tr class="table-template__tr">
               <td class="table-template__td">Диаметр:</td>
@@ -144,23 +143,29 @@
   </main>
   <footer class="footer-main">
     <div class="footer-main__wrapper">
-      <a class="footer-main__logo footer-main__logo--site-logo" href="#">
-        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      <a class="footer-main__logo footer-main__logo--site-logo">
+        <img class="footer-main__logo" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <ul class="social footer-main__social">
         <li class="social__item">
-          <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--in" href="#">
+            <img class="social__item-img social__item-img--in" src="img/icon-insta.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--fb" href="#">
+            <img class="social__item-img social__item-img--fb" src="img/icon-fb.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--tw" href="#">
+            <img class="social__item-img social__item-img--tw" src="img/icon-twitter.svg">
+          </a>
         </li>
       </ul>
       <a class="footer-main__address" href="#">
         Разработано
-        <img class="footer-main__logo footer-main__logo--academy" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="footer-main__logo footer-main__logo--academy" src="img/logo-htmlacademy.svg" alt="Логотип">
       </a>
     </div>
   </footer>
