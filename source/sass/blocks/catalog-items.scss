@@ -31,7 +31,8 @@
   .catalog-items__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 90px;
   }
 }

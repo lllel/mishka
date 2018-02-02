@@ -118,26 +118,26 @@
     flex-direction: row;
     justify-content: center;
     padding-bottom: 0;
-    margin-bottom: 109px;
+    margin: 5px auto 104px;
   }
 
   .process__container {
     width: 350px;
-    padding-left: 61px;
+    padding-left: 69px;
 
     &::after {
       content: "";
-      top: 45px;
-      left: 63px;
+      top: 42px;
+      left: 70px;
     }
   }
 
   .process__video {
     position: relative;
     top: 0;
-    left: 0;
+    left: -8px;
     transform: translateX(0);
-    width: 700px;
+    width: 680px;
   }
 
   .process__title {

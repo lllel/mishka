@@ -7,7 +7,7 @@
   min-width: 260px;
   width: 100%;
   height: 140px;
-  margin-top: 7px;
+  margin-top: 25px;
   border: 2px solid $grey-color-hsl0;
 
   &::placeholder {
@@ -33,11 +33,6 @@
     width: 100%;
   }
 
-  .user-order__item {
-    width: 500px;
-    margin: 46px auto 0;
-  }
-
   .user-order__title {
     margin-top: 59px;
 
@@ -48,6 +43,8 @@
   }
 
   .user-order__input {
+    margin-top: 53px;
+
     &::placeholder {
       font-size: $font-size-medium;
       line-height: $line-height-medium;
@@ -57,13 +54,10 @@
 
 @media (min-width: $desktop-width) {
   .user-order__wrapper {
-    padding-left: 30px;
-  }
-
-  .user-order__item {
-    width: 700px;
+    width: 782px;
     margin-top: 50px;
-    margin-left: 124px;
+    margin-left: 129px;
+    padding-left: 32px;
   }
 
   .user-order__input {

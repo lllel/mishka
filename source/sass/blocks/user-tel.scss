@@ -1,8 +1,6 @@
-.user-tel__title {
-  padding-top: 17px;
-}
+.user-tel__wrapper {
+  @include wrapper();
 
-.user-tel__item {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -11,8 +9,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 17px;
-    right: 8px;
+    top: 15px;
+    right: 38px;
     display: block;
     width: 25px;
     height: 25px;
@@ -20,6 +18,10 @@
     background-repeat: no-repeat;
     opacity: 0.1;
   }
+}
+
+.user-tel__title {
+  padding-top: 17px;
 }
 
 .user-tel__label {
@@ -30,6 +32,7 @@
 
 .user-tel__input {
   padding: 17px 10px;
+  padding-right: 50px;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -42,24 +45,13 @@
   }
 }
 
-.user-tel__wrapper {
-  @include wrapper();
-}
-
 @media (min-width: $tablet-width) {
   .user-tel {
     background-color: $grey-color-hs0-95;
   }
 
-  .user-tel__item {
-    &::after {
-      content: "";
-      top: 12px;
-      right: 28px;
-    }
-  }
-
   .user-tel__input {
+    padding-right: 65px;
     background-color: transparent;
 
     &::placeholder {
@@ -75,6 +67,12 @@
     width: 700px;
     padding-left: 182px;
     padding-right: 16px;
+
+    &::after {
+      content: "";
+      top: 12px;
+      right: 44px;
+    }
   }
 
   .user-tel__container {
@@ -98,19 +96,17 @@
     width: 745px;
     padding-left: 30px;
     margin-left: 126px;
+
+    &::after {
+      content: "";
+      top: 18px;
+      right: 19px;
+    }
   }
 
   .user-tel__container {
     width: 1120px;
     margin: 0 auto;
     padding-left: 50px;
-  }
-
-  .user-tel__item {
-    &::after {
-      content: "";
-      top: 18px;
-      right: 8px;
-    }
   }
 }
