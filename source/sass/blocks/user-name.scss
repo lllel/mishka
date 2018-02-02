@@ -1,22 +1,5 @@
 .user-name__title {
-  position: relative;
-  margin-left: 30px;
-  text-transform: uppercase;
-  font-size: $font-size-small;
-  line-height: $line-height-any-small;
-  font-weight: $font-weight-bold;
-  color: $green-color-hsl53;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 62px;
-    display: block;
-    width: 68%;
-    height: 1px;
-    background-color: $green-color-hsl53;
-  }
+  padding-top: 9px;
 }
 
 .user-name__item {
@@ -57,12 +40,12 @@
     flex-direction: column;
     margin: 0 auto;
     width: 700px;
-    padding-top: 46px;
-    padding-left: 185px;
+    padding: 46px 16px 0 185px;
   }
 
   .user-name__container {
     width: 100%;
+    padding-bottom: 13px;
   }
 
   .user-name__item {
@@ -70,11 +53,11 @@
     justify-content: flex-end;
     align-items: center;
     margin: 0;
+    padding-bottom: 21px;
   }
 
   .user-name__title {
-    position: absolute;
-    margin-top: 20px;
+    margin-top: 53px;
 
     &::after {
       content: "";
@@ -83,6 +66,7 @@
   }
 
   .user-name__label {
+    padding-right: 23px;
     font-size: $font-size-medium;
     line-height: $line-height-medium;
   }
@@ -99,7 +83,9 @@
 
 @media (min-width: $desktop-width) {
   .user-name__wrapper {
+    width: 745px;
     padding-left: 30px;
+    margin-left: 126px;
   }
 
   .user-name__container {

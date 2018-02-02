@@ -1,0 +1,35 @@
+.form-title {
+  position: relative;
+  margin: 0;
+  margin-left: 30px;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  font-weight: $font-weight-bold;
+  color: $green-color-hsl53;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 62%;
+    left: 67px;
+    display: block;
+    width: calc(100% - 98px);
+    height: 1px;
+    background-color: $green-color-hsl53;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-title {
+    position: absolute;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    margin-left: 43px;
+  }
+}

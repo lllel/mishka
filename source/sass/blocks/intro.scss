@@ -93,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 730px;
+    min-height: 744px;
   }
 
   .intro--height {
@@ -102,12 +102,11 @@
 
   .intro__wrapper {
     padding-left: 36px;
-    padding-top: 10px;
   }
 
   .intro__title {
     width: 550px;
-    padding-top: 144px;
+    padding-top: 152px;
   }
 
   .intro__title--padding {
@@ -127,6 +126,7 @@
 
   .intro__item {
     width: 50%;
+    min-height: 117px;
   }
 
   .intro__item--interior {
@@ -153,7 +153,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 730px;
+    min-height: 743px;
   }
 
   .intro--height {

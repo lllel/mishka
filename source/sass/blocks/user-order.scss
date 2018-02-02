@@ -1,22 +1,5 @@
 .user-order__title {
-  position: relative;
-  margin: 32px 0 25px 30px;
-  text-transform: uppercase;
-  font-size: $font-size-small;
-  line-height: $line-height-any-small;
-  font-weight: $font-weight-bold;
-  color: $green-color-hsl53;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 62px;
-    display: block;
-    width: 68%;
-    height: 1px;
-    background-color: $green-color-hsl53;
-  }
+  margin-top: 26px;
 }
 
 .user-order__input {
@@ -24,6 +7,7 @@
   min-width: 260px;
   width: 100%;
   height: 140px;
+  margin-top: 7px;
   border: 2px solid $grey-color-hsl0;
 
   &::placeholder {
@@ -42,17 +26,20 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 700px;
-    padding-left: 243px;
+    padding-left: 217px;
   }
 
   .user-order__container {
     width: 100%;
   }
 
+  .user-order__item {
+    width: 500px;
+    margin: 46px auto 0;
+  }
+
   .user-order__title {
-    position: absolute;
-    margin-top: 20px;
+    margin-top: 59px;
 
     &::after {
       content: "";
@@ -73,7 +60,14 @@
     padding-left: 30px;
   }
 
+  .user-order__item {
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 124px;
+  }
+
   .user-order__input {
+    margin-top: 0;
     overflow-y: hidden;
   }
 

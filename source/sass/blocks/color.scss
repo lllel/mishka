@@ -1,26 +1,8 @@
 .color__item {
   margin: 37px 0 43px 62px;
-}
 
-.color__title {
-  position: relative;
-  margin-left: 30px;
-  padding-top: 20px;
-  text-transform: uppercase;
-  font-size: $font-size-small;
-  line-height: $line-height-any-small;
-  font-weight: $font-weight-bold;
-  color: $green-color-hsl53;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 75%;
-    left: 62px;
-    display: block;
-    width: 68%;
-    height: 1px;
-    background-color: $green-color-hsl53;
+  &:last-child {
+    margin-bottom: 33px;
   }
 }
 
@@ -38,10 +20,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    //width: 700px;
+    width: 700px;
     margin: 0 auto;
-    padding-top: 44px;
-    padding-left: 183px;
+    padding: 44px 9px 14px 141px;
   }
 
   .color__container {
@@ -54,9 +35,7 @@
   }
 
   .color__title {
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 50px;
+    margin-top: 56px;
 
     &::after {
       content: "";
@@ -67,7 +46,11 @@
 
 @media (min-width: $desktop-width) {
   .color__wrapper {
-    width: auto;
+    justify-content: space-between;
+    width: 743px;
+    margin-left: 138px;
+    padding-bottom: 12px;
+    padding-left: 0;
   }
 
   .color__item {

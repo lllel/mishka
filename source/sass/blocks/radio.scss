@@ -1,6 +1,6 @@
 .radio {
   position: relative;
-  margin: 18px 0 8px 62px;
+  margin: 18px 50px 8px 95px;
 }
 
 .radio__input {
@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .radio {
-    margin: 18px 0 40px 98px;
+    margin: 5px 0 51px 98px;
   }
 
   .radio__label {
@@ -41,5 +41,11 @@
       width: 45px;
       height: 45px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio {
+    margin-left: 26px;
   }
 }
