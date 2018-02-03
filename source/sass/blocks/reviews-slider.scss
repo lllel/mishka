@@ -1,7 +1,3 @@
-.reviews-slider {
-  outline: 3px solid red;
-}
-
 .reviews-slider__wrapper {
   @include wrapper();
 
@@ -9,7 +5,12 @@
   flex-direction: column;
 }
 
+.reviews-slider__title {
+  font-size: $font-size-small-big;
+}
+
 .reviews-slider__text {
+  padding-top: 4px;
   margin: 0;
   font-size: $font-size-any-small;
   line-height: $line-height-big;
@@ -17,19 +18,22 @@
 }
 
 .reviews-slider__user-name {
+  padding-top: 30px;
+  margin: 0;
   font-size: $font-size-small;
   line-height: $line-height-small-big;
   font-weight: $font-weight-bold;
 }
 
 .reviews-slider__user-email {
+  margin: 0;
   font-size: $font-size-small;
   line-height: $line-height-small-big;
   color: $grey-color-hsl0;
 }
 
 .reviews-slider__button {
-  margin-top: 50px;
+  margin-top: 40px;
   order: 1;
 }
 
@@ -38,15 +42,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .reviews-slider__title {
+    padding-top: 41px;
     order: -1;
+    font-size: $font-size-any-big;
   }
 
   .slider-buttons.reviews-slider__buttons {
     align-items: center;
-    width: 50%;
+    margin-top: 24px;
+    width: 175px;
   }
 
   .reviews-slider__container {
@@ -55,9 +63,9 @@
 
   .reviews-slider__button {
     width: 175px;
-    padding: 10px;
+    padding: 13px;
     order: -1;
-    margin-top: 0;
+    margin-top: 43px;
     margin-right: 0;
   }
 
@@ -66,21 +74,59 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 34px;
+    padding-bottom: 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
   }
 
   .reviews-slider__text {
-    width: 85%;
+    padding-top: 14px;
+    width: 100%;
     font-size: $font-size-small;
+  }
+
+  .reviews-slider__user-name {
+    padding-top: 57px;
+  }
+
+  .reviews-slider__user-email {
+    padding-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews-slider__wrapper {
+    margin-top: 38px;
+    padding-left: 97px;
+    padding-bottom: 96px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
+  }
+
+  .reviews-slider__container {
+    margin-left: 125px;
+  }
+
+  .reviews-slider__title {
+    padding-top: 24px;
+    padding-left: 122px;
+    font-size: $font-size-very-big;
+  }
+
+  .reviews-slider__text {
+    width: 904px;
+    padding-top: 7px;
+    padding-left: 127px;
+  }
+
+  .reviews-slider__user-name {
+    padding-top: 39px;
+  }
+
+  .reviews-slider__button {
+    margin-right: 0;
   }
 }

@@ -1,10 +1,5 @@
 .user-order__title {
-  margin-left: 30px;
-  text-transform: uppercase;
-  font-size: $font-size-small;
-  line-height: $line-height-any-small;
-  font-weight: $font-weight-bold;
-  color: $green-color-hsl53;
+  margin-top: 26px;
 }
 
 .user-order__input {
@@ -12,6 +7,7 @@
   min-width: 260px;
   width: 100%;
   height: 140px;
+  margin-top: 25px;
   border: 2px solid $grey-color-hsl0;
 
   &::placeholder {
@@ -30,8 +26,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 700px;
-    padding-left: 243px;
+    padding-left: 217px;
   }
 
   .user-order__container {
@@ -39,11 +34,17 @@
   }
 
   .user-order__title {
-    position: absolute;
-    margin-top: 20px;
+    margin-top: 59px;
+
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 
   .user-order__input {
+    margin-top: 53px;
+
     &::placeholder {
       font-size: $font-size-medium;
       line-height: $line-height-medium;
@@ -53,10 +54,14 @@
 
 @media (min-width: $desktop-width) {
   .user-order__wrapper {
-    padding-left: 30px;
+    width: 782px;
+    margin-top: 50px;
+    margin-left: 129px;
+    padding-left: 32px;
   }
 
   .user-order__input {
+    margin-top: 0;
     overflow-y: hidden;
   }
 

@@ -8,6 +8,31 @@
 .slider-buttons__item {
   width: 50%;
   height: 52px;
+  margin-top: 35px;
   border: 1px solid $grey-color-hsl00;
   background-color: transparent;
+}
+
+.slider-buttons__item--left {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-buttons__item--right {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-buttons__item {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-buttons.reviews-slider__buttons {
+    margin-top: 6px;
+  }
 }

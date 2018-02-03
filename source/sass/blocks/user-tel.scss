@@ -1,15 +1,27 @@
-.user-tel__title {
-  margin-left: 30px;
-  text-transform: uppercase;
-  font-size: $font-size-small;
-  line-height: $line-height-any-small;
-  font-weight: $font-weight-bold;
-  color: $green-color-hsl53;
-}
+.user-tel__wrapper {
+  @include wrapper();
 
-.user-tel__item {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 38px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+}
+
+.user-tel__title {
+  padding-top: 17px;
 }
 
 .user-tel__label {
@@ -19,7 +31,8 @@
 }
 
 .user-tel__input {
-  padding: 20px 10px;
+  padding: 17px 10px;
+  padding-right: 50px;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -32,16 +45,13 @@
   }
 }
 
-.user-tel__wrapper {
-  @include wrapper();
-}
-
 @media (min-width: $tablet-width) {
   .user-tel {
     background-color: $grey-color-hs0-95;
   }
 
   .user-tel__input {
+    padding-right: 65px;
     background-color: transparent;
 
     &::placeholder {
@@ -55,22 +65,43 @@
     flex-direction: column;
     margin: 0 auto;
     width: 700px;
-    padding-left: 243px;
+    padding-left: 182px;
+    padding-right: 16px;
+
+    &::after {
+      content: "";
+      top: 12px;
+      right: 44px;
+    }
   }
 
   .user-tel__container {
     width: 100%;
+    padding-top: 48px;
   }
 
   .user-tel__title {
-    position: absolute;
+    padding-top: 0;
     margin-top: 20px;
+
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-tel__wrapper {
+    width: 745px;
     padding-left: 30px;
+    margin-left: 126px;
+
+    &::after {
+      content: "";
+      top: 18px;
+      right: 19px;
+    }
   }
 
   .user-tel__container {

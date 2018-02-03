@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  width: 150px;
+  width: 160px;
   padding: 0;
 }
 
@@ -14,8 +14,11 @@
 }
 
 .social__item-link {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
-  background-color: red;
+}
+
+.social__item-img {
+  margin: auto;
 }

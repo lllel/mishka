@@ -10,7 +10,7 @@
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
-        <img class="header-main__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
@@ -18,16 +18,17 @@
       <li class="site-nav__item">
         <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
       </li>
-      <li class="site-nav__item">
+      <li class="site-nav__item ">
         <a class="site-nav__link">Вязание на заказ</a>
       </li>
     </ul>
     <ul class="user-nav header-main__nav-items">
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Поиск по сайту</a>
+      <li class="user-nav__item user-nav__item--decoration">
+        <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
+          <img class="user-nav__item-img" src="img/icon-search.svg"></a>
       </li>
-      <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Корзина: <span>пока пуста</span></a>
+      <li class="user-nav__item user-nav__item--basket">
+        <a href="#" class="user-nav__link">Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
       </li>
     </ul>
     <ul class="additional-nav">
@@ -42,7 +43,7 @@
   </header>
   <main class="main">
     <section class="intro intro--height">
-      <h1 class="title intro__title">Вязание на заказ</h1>
+      <h1 class="title intro__title intro__title--padding">Вязание на заказ</h1>
     </section>
     <form class="form-main" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-main__info">
@@ -50,7 +51,7 @@
       </p>
       <div class="type form-main__items">
         <div class="type__container">
-          <h2 class="type__title">тип</h2>
+          <h2 class="form-title type__title">тип</h2>
           <div class="type__wrapper">
             <p class="radio type__item">
               <input id="radio1" class="radio__input" type="radio" name="type">
@@ -65,7 +66,7 @@
       </div>
       <div class="color form-main__items">
         <div class="color__container">
-          <h2 class="color__title">цвет</h2>
+          <h2 class="form-title color__title">цвет</h2>
           <div class="color__wrapper">
             <p class="checkbox color__item">
               <input id="checkbox1" class="checkbox__input" type="checkbox" name="checkbox">
@@ -77,7 +78,7 @@
             </p>
             <p class="checkbox color__item">
               <input id="checkbox3" class="checkbox__input" type="checkbox" name="checkbox">
-              <label for="checkbox3" class="checkbox__label">"Тиффани"</label>
+              <label for="checkbox3" class="checkbox__label">«Тиффани»</label>
             </p>
             <p class="checkbox color__item">
               <input id="checkbox4" class="checkbox__input" type="checkbox" name="checkbox">
@@ -96,7 +97,7 @@
       </div>
       <div class="user-name form-main__items">
         <div class="user-name__container">
-          <h2 class="user-name__title">фио</h2>
+          <h2 class="form-title user-name__title">фио</h2>
           <div class="user-name__wrapper">
             <p class="user-name__item">
               <input id="text" class="user-name__input" type="text" placeholder="Введите ваше имя*" name="text" required>
@@ -115,31 +116,25 @@
       </div>
       <div class="user-tel form-main__items">
         <div class="user-tel__container">
-          <h2 class="user-tel__title">тел</h2>
+          <h2 class="form-title user-tel__title">тел</h2>
           <div class="user-tel__wrapper">
-            <p class="user-tel__item">
-              <input class="user-tel__input" type="tel" placeholder="+7 XXX XX XX*" name="tel" required>
-            </p>
+            <input class="user-tel__input" type="tel" placeholder="+7 XXX XX XX*" name="tel" required>
           </div>
         </div>
       </div>
       <div class="user-email form-main__items">
         <div class="user-email__container">
-          <h2 class="user-email__title">e-mail</h2>
+          <h2 class="form-title user-email__title">e-mail</h2>
           <div class="user-email__wrapper">
-            <p class="user-email__item">
-              <input class="user-email__input" type="email" placeholder="Ваш Email*" name="email" required>
-            </p>
+            <input class="user-email__input" type="email" placeholder="Ваш Email*" name="email" required>
           </div>
         </div>
       </div>
       <div class="user-order form-main__items">
         <div class="user-order__container">
-          <h2 class="user-order__title">доп</h2>
+          <h2 class="form-title user-order__title">доп</h2>
           <div class="user-order__wrapper">
-            <p class="user-order__item">
-              <textarea class="user-order__input" placeholder="Опишите все ваши пожелания к заказу" name="textarea"></textarea>
-            </p>
+            <textarea class="user-order__input" placeholder="Опишите все ваши пожелания к заказу" name="textarea"></textarea>
           </div>
         </div>
       </div>
@@ -151,25 +146,31 @@
       </div>
     </form>
   </main>
-  <footer class="footer-main">
+  <footer class="footer-main footer-main--form">
     <div class="footer-main__wrapper">
-      <a class="footer-main__logo footer-main__logo--site-logo" href="#">
-        <img class="footer-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      <a class="footer-main__logo footer-main__logo--site-logo" href="index.html">
+        <img class="footer-main__logo" src="img/logo-mobile.svg" alt="Логотип">
       </a>
       <ul class="social footer-main__social">
         <li class="social__item">
-          <a class="social__item-link social__item-link--in" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--in" href="#">
+            <img class="social__item-img social__item-img--in" src="img/icon-insta.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--fb" href="#">
+            <img class="social__item-img social__item-img--fb" src="img/icon-fb.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link social__item-link--tw" href="#"><span class="visually-hidden">логотип</span></a>
+          <a class="social__item-link social__item-link--tw" href="#">
+            <img class="social__item-img social__item-img--tw" src="img/icon-twitter.svg">
+          </a>
         </li>
       </ul>
       <a class="footer-main__address" href="#">
         Разработано
-        <img class="footer-main__logo footer-main__logo--academy" src="http://placehold.it/150x100" alt="Логотип">
+        <img class="footer-main__logo footer-main__logo--academy" src="img/logo-htmlacademy.svg" alt="Логотип">
       </a>
     </div>
   </footer>

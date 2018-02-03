@@ -1,6 +1,6 @@
 .radio {
   position: relative;
-  margin: 40px 0 40px 55px;
+  margin: 18px 50px 8px 95px;
 }
 
 .radio__input {
@@ -15,19 +15,37 @@
   &::after {
     content: "";
     position: absolute;
-    top: -12px;
-    left: -55px;
+    top: -8px;
+    left: -62px;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 2px solid $grey-color-hsl0;
     border-radius: 50%;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .radio {
+    margin: 5px 0 51px 98px;
+  }
+
   .radio__label {
     font-size: $font-size-medium;
     line-height: $line-height-medium;
+
+    &::after {
+      content: "";
+      top: -13px;
+      left: -80px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio {
+    margin-left: 26px;
   }
 }

@@ -17,5 +17,10 @@
     flex-direction: row;
     order: 3;
     z-index: 5;
+    padding-left: 0;
+  }
+
+  .additional-nav__link {
+    margin-right: 61px;
   }
 }
