@@ -1,5 +1,18 @@
 .products {
   position: relative;
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .products__container {
@@ -79,7 +92,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 0;
   }
 
   .products__wrapper {
@@ -142,6 +154,11 @@
     flex-direction: row-reverse;
     max-width: 1050px;
     margin: 0 auto;
+
+    &::after {
+      content: "";
+      left: 80px;
+    }
   }
 
   .products__container {

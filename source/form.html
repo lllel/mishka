@@ -10,7 +10,13 @@
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
-        <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg">
+          <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
       </a>
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>

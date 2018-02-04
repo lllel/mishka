@@ -10,7 +10,13 @@
   <header class="header-main header-main--max-width">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
-        <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg">
+          <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
       </a>
       <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
@@ -48,7 +54,14 @@
     <section class="catalog-items">
       <div class="catalog-items__wrapper">
         <article class="catalog-item catalog-items__item">
-          <img class="catalog-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Товар">
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-hare-mobile@1x.jpg" alt="Товар"
+                  srcset="img/photo-hare-mobile@2x.jpg 2x">
+          </picture>
           <div class="catalog-item__wrapper">
             <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
             <p class="catalog-item__size">Рост 30 см, вес 200 г</p>
@@ -56,7 +69,14 @@
           </div>
         </article>
         <article class="catalog-item catalog-items__item">
-          <img class="catalog-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Товар">
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-bowl-mobile@1x.jpg" alt="Товар"
+                    srcset="img/photo-bowl-mobile@2x.jpg 2x">
+          </picture>
           <div class="catalog-item__wrapper">
             <h2 class="catalog-item__title">Корзинка для белья</h2>
             <p class="catalog-item__size">Диаметр 15 см, высота 10 см</p>
@@ -64,7 +84,14 @@
           </div>
         </article>
         <article class="catalog-item catalog-items__item">
-          <img class="catalog-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Товар">
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-toys-mobile@1x.jpg" alt="Товар"
+                    srcset="img/photo-toys-mobile@2x.jpg 2x">
+          </picture>
           <div class="catalog-item__wrapper">
             <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
             <p class="catalog-item__size">Диаметр 30 см, высота 30 см</p>
@@ -76,7 +103,14 @@
     <section class="process">
       <div class="process__wrapper">
         <div class="process__video">
-          <img class="process__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео">
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="process__img" src="img/video-mobile@1x.jpg" alt="Видео"
+                  srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="process__container">
           <h2 class="process__title">Процесс производства</h2>

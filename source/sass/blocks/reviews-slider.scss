@@ -79,6 +79,12 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .reviews-slider__wrapper {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
   }
 
   .reviews-slider__text {
@@ -101,9 +107,6 @@
     margin-top: 38px;
     padding-left: 97px;
     padding-bottom: 96px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
   }
 
   .reviews-slider__container {
