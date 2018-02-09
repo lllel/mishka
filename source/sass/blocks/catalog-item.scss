@@ -4,6 +4,14 @@
   border: 1px solid $grey-color-hs0-93;
 }
 
+.catalog-item:hover {
+  box-shadow: 0 9px 24px -13px grey;
+}
+
+.catalog-item:active {
+  box-shadow: 0 9px 15px -13px grey;
+}
+
 .catalog-item__wrapper {
   padding-left: 27px;
   text-align: left;
