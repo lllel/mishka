@@ -22,3 +22,39 @@
 .social__item-img {
   margin: auto;
 }
+
+.social__item-link--in {
+  transition: 0.2s ease;
+
+  &:hover {
+    fill: $green-color-hsl174;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item-link--fb {
+  transition: 0.2s ease;
+
+  &:hover {
+    fill: $green-color-hsl174;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item-link--tw {
+  transition: 0.2s ease;
+
+  &:hover {
+    fill: $green-color-hsl174;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

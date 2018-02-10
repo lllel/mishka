@@ -10,6 +10,14 @@
   margin-top: 25px;
   border: 2px solid $grey-color-hsl0;
 
+  &:focus {
+    border-color: $green-color-hsl5382;
+  }
+
+  &:hover {
+    border-color: $green-color-hsl5382;
+  }
+
   &::placeholder {
     font-size: $font-size-small;
     line-height: $line-height-any-small;

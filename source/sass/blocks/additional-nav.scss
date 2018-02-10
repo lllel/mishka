@@ -3,6 +3,18 @@
   list-style-type: none;
 }
 
+.additional-nav__item {
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
 .additional-nav__link {
   font-size: $font-size-any-small;
   line-height: $line-height-small-big;

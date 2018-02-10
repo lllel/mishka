@@ -4,6 +4,10 @@
 
 .modal-checkbox__input {
   @include visually-hidden();
+
+  &:checked + .modal-checkbox__label {
+    border-color: $green-color-hsl5382;
+  }
 }
 
 .modal-checkbox__label {
@@ -11,6 +15,10 @@
   height: 52px;
   background-color: transparent;
   border: 2px solid $grey-color-hsl00;
+
+  &:hover {
+    border-color: $grey-color-hs199;
+  }
 }
 
 .modal-checkbox__label span {

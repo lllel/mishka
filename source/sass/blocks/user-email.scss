@@ -5,19 +5,12 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 32px;
-    display: block;
-    width: 35px;
-    height: 25px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    opacity: 0.1;
-  }
+.user-email__icon {
+  position: absolute;
+  top: 15px;
+  right: 34px;
 }
 
 .user-email__title {
@@ -37,6 +30,14 @@
   border-right: none;
   border-left: none;
   border-bottom: 2px solid $black-color;
+
+  &:hover {
+    border-color: $green-color-hsl5382;
+  }
+
+  &:focus {
+    border-color: $green-color-hsl5382;
+  }
 
   &::placeholder {
     font-size: $font-size-small;
@@ -67,12 +68,11 @@
     margin: 0 auto;
     width: 700px;
     padding: 5px 16px 0 182px;
+  }
 
-    &::after {
-      content: "";
-      top: 19px;
-      right: 36px;
-    }
+  .user-email__icon {
+    top: 19px;
+    right: 39px;
   }
 
   .user-email__container {
@@ -92,19 +92,13 @@
 
 @media (min-width: $desktop-width) {
   .user-email {
-    padding-bottom: 56px;
+    padding-bottom: 51px;
   }
 
   .user-email__wrapper {
     width: 745px;
     padding-left: 30px;
     margin-left: 126px;
-
-    &::after {
-      content: "";
-      top: 16px;
-      right: 13px;
-    }
   }
 
   .user-email__container {
@@ -112,5 +106,10 @@
     margin: 0 auto;
     padding-left: 50px;
     padding-top: 3px;
+  }
+
+  .user-email__icon {
+    top: 16px;
+    right: 16px;
   }
 }

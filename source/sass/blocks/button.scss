@@ -12,4 +12,15 @@
   background-color: transparent;
   border: 2px solid $grey-color-hsl0;
   padding: 12px 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: $white-color;
+    background-color: $grey-color-hsl0;
+  }
+
+  &:active {
+    color: $grey-color-hsl141;
+  }
 }

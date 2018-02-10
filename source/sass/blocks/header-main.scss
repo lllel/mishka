@@ -8,6 +8,15 @@
   line-height: $line-height-small-big;
   color: $grey-color-hsl0;
   text-decoration: none;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .header-main__wrapper {
@@ -23,10 +32,18 @@
   text-align: center;
 }
 
+.header-main__logo-tablet {
+  display: none;
+}
+
+.header-main__logo-desktop {
+  display: none;
+}
+
 .header-main__button {
   position: absolute;
   top: 17px;
-  right: 18px;
+  right: 12px;
   width: 25px;
   height: 25px;
   padding: 22px;
@@ -143,8 +160,16 @@
     margin-left: 0;
   }
 
+  .header-main__logo-mobile {
+    display: none;
+  }
+
+  .header-main__logo-tablet {
+    display: flex;
+  }
+
   .header-main__wrapper {
-    padding-bottom: 27px;
+    padding-bottom: 20px;
     order: 1;
   }
 
@@ -164,11 +189,20 @@
     margin: 0 auto;
   }
 
+  .header-main__logo-tablet {
+    display: none;
+  }
+
+  .header-main__logo-desktop {
+    display: flex;
+  }
+
   .header-main--max-width {
     max-width: 1050px;
   }
 
   .header-main__wrapper {
+    padding: 0;
     order: 2;
   }
 
