@@ -14,29 +14,31 @@
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
         <svg class="header-main__logo-desktop" width="148" height="73">
-          <use xlink:href="#icon-logo-desktop"></use>
+          <use class="header-main__logo-desktop-part1" xlink:href="#icon-logo-desktop__part1"></use>
+          <use class="header-main__logo-desktop-part2" xlink:href="#icon-logo-desktop__part2"></use>
         </svg>
-        <svg class="header-main__logo-tablet" width="112" height="46">
-          <use xlink:href="#icon-logo-tablet"></use>
+        <svg class="header-main__logo-tablet" width="112" height="46" viewBox="58 15 36 46.087">
+          <use class="header-main__logo-tablet-part1" xlink:href="#icon-logo-tablet__part1"></use>
+          <use class="header-main__logo-tablet-part2" xlink:href="#icon-logo-tablet__part2"></use>
         </svg>
-        <svg class="header-main__logo-mobile" width="86" height="35">
-          <use xlink:href="#icon-logo-mobile"></use>
+        <svg class="header-main__logo-mobile" width="100" height="45" viewBox="55 20 45 46.087">
+          <use class="header-main__logo-mobile-part1" xlink:href="#icon-logo-mobile__part1"></use>
         </svg>
       </a>
-      <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
+      <button class="header-main__button header-main__button--opened header-main__button--none" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
     <ul class="site-nav header-main__nav-items">
       <li class="site-nav__item">
         <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
       </li>
       <li class="site-nav__item ">
-        <a href="form.html" class="site-nav__link">Вязание на заказ</a>
+        <a class="site-nav__link">Вязание на заказ</a>
       </li>
     </ul>
     <ul class="user-nav header-main__nav-items">
       <li class="user-nav__item user-nav__item--decoration">
         <svg class="user-nav__item-img" width="18" height="18">
-          <use xlink:href="#icon-search"></use>
+          <use class="user-nav__icon-search" xlink:href="#icon-search"></use>
         </svg>
         <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
         </a>
@@ -44,7 +46,7 @@
       <li class="user-nav__item user-nav__item--basket">
         <a href="#" class="user-nav__link">
           <svg class="user-nav__item-img" width="20" height="19">
-            <use xlink:href="#icon-cart"></use>
+            <use class="user-nav__icon-cart" xlink:href="#icon-cart"></use>
           </svg>
           Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
       </li>
@@ -149,7 +151,7 @@
           <div class="user-email__wrapper">
             <input class="user-email__input" type="email" placeholder="Ваш Email*" name="email" required>
             <svg class="user-email__icon" width="32" height="32">
-              <use class="icon-mail" xlink:href="#icon-mail"></use>
+              <use class="user-email__icon-mail" xlink:href="#icon-mail"></use>
             </svg>
           </div>
         </div>
@@ -170,11 +172,11 @@
       </div>
     </form>
   </main>
-  <footer class="footer-main footer-main--form">
+  <footer class="footer-main">
     <div class="footer-main__wrapper">
       <a class="footer-main__logo footer-main__logo--site-logo">
         <svg class="footer-main__logo-img" width="102" height="34">
-          <use xlink:href="#icon-logo-footer"></use>
+          <use class="footer-main__icon-logo" xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social footer-main__social">
@@ -203,10 +205,13 @@
       <a class="footer-main__address" href="#">
         <span>Разработано</span>
         <svg class="footer-main__logo--academy" width="30" height="34">
-          <use xlink:href="#icon-logo-htmlacademy"></use>
+          <use class="footer-main__icon-logo-htmlacademy" xlink:href="#icon-logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

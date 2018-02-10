@@ -24,7 +24,7 @@
 
   position: relative;
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 }
 
 .header-main__logo {
@@ -36,8 +36,20 @@
   display: none;
 }
 
+.header-main__logo-tablet-part2 {
+  fill: $white-color;
+}
+
 .header-main__logo-desktop {
   display: none;
+}
+
+.header-main__logo-desktop-part2 {
+  fill: $white-color;
+}
+
+.header-main__logo-mobile-part1 {
+  fill: $black-color;
 }
 
 .header-main__button {
@@ -47,6 +59,8 @@
   width: 25px;
   height: 25px;
   padding: 22px;
+  padding-left: 0;
+  margin-right: 22px;
   border: 0;
   background-color: transparent;
   cursor: pointer;
@@ -130,16 +144,20 @@
   }
 }
 
-.header-main__nav-items {
+.header-main__button--none {
   display: none;
+}
+
+.header-main__nav-items {
+  display: block;
   flex-direction: column;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
 
-.header-main__nav-items--opened {
-  display: flex;
+.header-main__nav-items--closed {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

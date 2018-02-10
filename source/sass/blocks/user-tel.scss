@@ -13,6 +13,11 @@
   right: 38px;
 }
 
+.user-tel__icon-phone {
+  fill: #c7c7c7;
+  opacity: 0.2;
+}
+
 .user-tel__title {
   padding-top: 17px;
 }
@@ -31,22 +36,26 @@
   border-left: none;
   border-bottom: 2px solid $black-color;
 
-  &:hover {
-    border-color: $green-color-hsl5382;
-
-    .user-tel__icon-phone {
-      fill: $green-color-hsl5382;
-    }
-  }
-
-  &:focus {
-    border-color: $green-color-hsl5382;
-  }
-
   &::placeholder {
     font-size: $font-size-small;
     line-height: $line-height-any-small;
     color: $grey-color-hsl0;
+  }
+}
+
+.user-tel__input:hover {
+  border-color: $green-color-hsl5382;
+
+  .user-tel__icon-phone {
+    fill: $green-color-hsl5382;
+  }
+}
+
+.user-tel__input:focus {
+  border-color: $green-color-hsl5382;
+
+  .user-tel__icon-phone {
+    fill: $green-color-hsl5382;
   }
 }
 

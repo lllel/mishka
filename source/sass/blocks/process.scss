@@ -4,10 +4,12 @@
   margin: 32px auto 0;
   padding-bottom: 34px;
   border: 1px solid $grey-color-hs0-93;
+  z-index: 5;
 }
 
 .process__container {
   position: relative;
+  z-index: -2;
 
   &::after {
     content: "";
@@ -50,14 +52,34 @@
   position: absolute;
   left: 50%;
   top: 94px;
+  display: block;
   transform: translateX(-50%);
   text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
 }
 
-.process__video-play {
-  position: absolute;
-  top: 0;
-  left: 0;
+.process__video:hover::after {
+  width: 121px;
+  height: 92px;
+}
+
+.process__video:active::after {
+  width: 66px;
+  height: 50px;
+  opacity: 0.7;
 }
 
 @media (min-width: $tablet-width) {

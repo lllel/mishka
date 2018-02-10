@@ -140,6 +140,11 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding-top: 40px;
+
+    &::after {
+      content: "";
+      height: 30px;
+    }
   }
 
   .about-us__title {
@@ -183,12 +188,6 @@
   .about-us__item--gift {
     order: 6;
   }
-
-  .about-us {
-    &::after {
-      height: 30px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -199,17 +198,7 @@
 
     &::after {
       content: "";
-      display: block;
-      width: 87%;
-      height: 28px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
+      height: 30px;
     }
   }
 

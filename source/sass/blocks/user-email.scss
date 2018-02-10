@@ -13,6 +13,11 @@
   right: 34px;
 }
 
+.user-email__icon-mail {
+  fill: #c7c7c7;
+  opacity: 0.2;
+}
+
 .user-email__title {
   margin-top: 26px;
 }
@@ -31,18 +36,26 @@
   border-left: none;
   border-bottom: 2px solid $black-color;
 
-  &:hover {
-    border-color: $green-color-hsl5382;
-  }
-
-  &:focus {
-    border-color: $green-color-hsl5382;
-  }
-
   &::placeholder {
     font-size: $font-size-small;
     line-height: $line-height-any-small;
     color: $grey-color-hsl0;
+  }
+}
+
+.user-email__input:hover {
+  border-color: $green-color-hsl5382;
+
+  .user-email__icon-mail {
+    fill: $green-color-hsl5382;
+  }
+}
+
+.user-email__input:focus {
+  border-color: $green-color-hsl5382;
+
+  .user-email__icon-mail {
+    fill: $green-color-hsl5382;
   }
 }
 

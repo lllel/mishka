@@ -6,6 +6,7 @@
 
 .catalog-item:hover {
   box-shadow: 0 9px 24px -13px grey;
+  transition: 0.2s ease;
 }
 
 .catalog-item:active {
@@ -16,6 +17,10 @@
   position: relative;
   padding-left: 27px;
   text-align: left;
+}
+
+.catalog-item__icon-cart {
+  fill: $grey-color-hs199;
 }
 
 .catalog-item__icon {
@@ -39,7 +44,7 @@
   transition: 0.2s ease;
   opacity: 0.7;
 
-  .catalog-item__icon {
+  .catalog-item__icon-cart {
     fill: $green-color-hsl5382;
   }
 }
@@ -48,7 +53,8 @@
   transition: 0.2s ease;
   opacity: 0.3;
 
-  .catalog-item__icon {
+  .catalog-item__icon-cart {
+    fill: $green-color-hsl5382;
     opacity: 0.3;
   }
 }
