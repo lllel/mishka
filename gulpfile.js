@@ -77,12 +77,12 @@ gulp.task('html', function () {
 // Минификация и конкатенация js для продакшена
 gulp.task('jsOptimization', function (cd) {
   pump([gulp.src('source/js/*.js'),
-      sourcemaps.init(),
+      // sourcemaps.init(),
       uglify(),
       concat('all.js'),
-      sourcemaps.write(),
+      // sourcemaps.write(),
       gulp.dest('build/js')],
-    server.stream(), cd);
+    server.reload(), cd);
 });
 
 // Создание и оптимизация изображений webp
