@@ -44,20 +44,22 @@
 .catalog-item__title:hover {
   transition: 0.2s ease;
   opacity: 0.7;
+}
 
-  .catalog-item__icon-cart {
-    fill: $green-color-hsl5382;
-  }
+.catalog-item__title:hover ~ .catalog-item__icon .catalog-item__icon-cart {
+  fill: $green-color-hsl5382;
+  transition: 0.2s ease;
 }
 
 .catalog-item__title:active {
-  transition: 0.2s ease;
   opacity: 0.3;
+  transition: 0.2s ease;
+}
 
-  .catalog-item__icon-cart {
-    fill: $green-color-hsl5382;
-    opacity: 0.3;
-  }
+.catalog-item__title:active ~ .catalog-item__icon .catalog-item__icon-cart {
+  fill: $green-color-hsl5382;
+  opacity: 0.3;
+  transition: 0.2s ease;
 }
 
 .catalog-item__size {

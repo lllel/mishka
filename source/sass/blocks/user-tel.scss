@@ -15,7 +15,6 @@
 
 .user-tel__icon-phone {
   fill: #c7c7c7;
-  opacity: 0.2;
 }
 
 .user-tel__title {
@@ -45,18 +44,18 @@
 
 .user-tel__input:hover {
   border-color: $green-color-hsl5382;
+}
 
-  .user-tel__icon-phone {
-    fill: $green-color-hsl5382;
-  }
+.user-tel__input:hover ~ .user-tel__icon .user-tel__icon-phone {
+  fill: $green-color-hsl5382;
 }
 
 .user-tel__input:focus {
   border-color: $green-color-hsl5382;
+}
 
-  .user-tel__icon-phone {
-    fill: $green-color-hsl5382;
-  }
+.user-tel__input:focus ~ .user-tel__icon .user-tel__icon-phone {
+  fill: $green-color-hsl5382;
 }
 
 @media (min-width: $tablet-width) {

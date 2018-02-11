@@ -15,7 +15,6 @@
 
 .user-email__icon-mail {
   fill: #c7c7c7;
-  opacity: 0.2;
 }
 
 .user-email__title {
@@ -45,18 +44,18 @@
 
 .user-email__input:hover {
   border-color: $green-color-hsl5382;
+}
 
-  .user-email__icon-mail {
-    fill: $green-color-hsl5382;
-  }
+.user-email__input:hover ~ .user-email__icon .user-email__icon-mail {
+  fill: $green-color-hsl5382;
 }
 
 .user-email__input:focus {
   border-color: $green-color-hsl5382;
+}
 
-  .user-email__icon-mail {
-    fill: $green-color-hsl5382;
-  }
+.user-email__input:focus ~ .user-email__icon .user-email__icon-mail {
+  fill: $green-color-hsl5382;
 }
 
 @media (min-width: $tablet-width) {
