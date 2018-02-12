@@ -16,12 +16,37 @@
   @include wrapper();
 }
 
-.footer-main__logo--academy {
-  margin-left: 30px;
+.footer-main__icon-logo-htmlacademy {
+  fill: #46c1ae;
 }
 
 .footer-main__logo--site-logo {
   display: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    fill: $green-color-hsl174;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-main__social {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 265px;
+    height: 1px;
+    background-color: $grey-color-hsl00;
+    position: absolute;
+    top: 60px;
+    left: -55px;
+  }
 }
 
 .footer-main__address {
@@ -35,6 +60,15 @@
   font-weight: $font-weight-bold;
   color: $black-color;
   text-decoration: none;
+  transition: 0.2s ease;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-main__address span {
+  padding-right: 26px;
 }
 
 .form-main__important {
@@ -70,7 +104,7 @@
 
   .footer-main__logo--site-logo {
     display: block;
-    padding-right: 75px;
+    padding-right: 76px;
 
     .footer-main__logo {
       width: 100px;
@@ -79,5 +113,15 @@
 
   .footer-main__address {
     margin-top: 0;
+    padding: 0;
+  }
+
+  .footer-main__address span {
+    padding-right: 26px;
+  }
+
+  .footer-main__social::after {
+    content: "";
+    display: none;
   }
 }

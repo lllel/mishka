@@ -4,12 +4,24 @@
 
 .checkbox__input {
   @include visually-hidden();
+
+  &:hover + .checkbox__label::after {
+    border-color: $green-color-hsl5382;
+    transition: 0.2s ease;
+  }
+
+  &:active + .checkbox__label::after {
+    border-color: $grey-color-hs199;
+    transition: 0.2s ease;
+  }
 }
 
 .checkbox__label {
+  cursor: pointer;
   font-size: $font-size-small;
   line-height: $line-height-any-small;
   font-weight: $font-weight-bold;
+  transition: 0.2s ease;
 
   &::after {
     content: "";
@@ -20,6 +32,15 @@
     width: 35px;
     height: 35px;
     border: 2px solid $grey-color-hsl0;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label {
+  &::after {
+    content: "";
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

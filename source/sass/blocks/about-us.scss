@@ -1,5 +1,22 @@
 .about-us {
   @include wrapper();
+
+  position: relative;
+  padding-top: 17px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 14px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 .about-us__items {
@@ -15,7 +32,6 @@
 }
 
 .about-us__title {
-  padding-top: 50px;
   font-size: $font-size-small-big;
 }
 
@@ -31,7 +47,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-flower.svg");
+    background-image: url("../img/feature-flower.svg");
     background-repeat: no-repeat;
   }
 }
@@ -48,7 +64,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-ball.svg");
+    background-image: url("../img/feature-ball.svg");
     background-repeat: no-repeat;
   }
 }
@@ -65,7 +81,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-money.svg");
+    background-image: url("../img/feature-money.svg");
     background-repeat: no-repeat;
   }
 }
@@ -82,7 +98,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-rocket.svg");
+    background-image: url("../img/feature-rocket.svg");
     background-repeat: no-repeat;
   }
 }
@@ -99,7 +115,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-heart.svg");
+    background-image: url("../img/feature-heart.svg");
     background-repeat: no-repeat;
   }
 }
@@ -116,14 +132,22 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icon-feature-gift.svg");
+    background-image: url("../img/feature-gift.svg");
     background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 40px;
+
+    &::after {
+      content: "";
+      height: 30px;
+    }
+  }
+
   .about-us__title {
-    padding-top: 84px;
     font-size: $font-size-any-big;
   }
 
@@ -168,7 +192,14 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
+    position: relative;
     max-width: 100%;
+    padding-top: 16px;
+
+    &::after {
+      content: "";
+      height: 30px;
+    }
   }
 
   .about-us__wrapper {
@@ -178,7 +209,7 @@
   }
 
   .about-us__title {
-    padding-top: 111px;
+    padding-top: 23px;
     padding-left: 53px;
     font-size: $font-size-very-big;
   }

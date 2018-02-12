@@ -1,14 +1,35 @@
+.modal-products {
+  display: none;
+  position: absolute;
+  top: 1369px;
+  left: 50%;
+  width: 320px;
+  padding: 24px 0 46px;
+  transform: translateX(-50%);
+  background-color: $white-color;
+  box-shadow: 0 9px 28px -8px grey;
+  z-index: 10;
+}
+
+.modal-products--opened {
+  display: block;
+}
+
 .modal-products__wrapper {
   @include wrapper();
 }
 
 .modal-products__title {
-  width: 175px;
+  width: 158px;
   margin: 0 auto;
+  padding-left: 12px;
+  font-size: 23px;
+  line-height: $line-height-big;
   text-transform: uppercase;
 }
 
 .modal-products__size {
+  margin-bottom: 3px;
   text-align: center;
   font-size: $font-size-any-small;
   line-height: $line-height-big;
@@ -19,6 +40,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.modal-products__button {
+  margin-top: 17px;
+  padding: 15px;
 }
 
 @media (min-width: $tablet-width) {

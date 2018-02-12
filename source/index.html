@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo">
-        <picture>
-          <source media="(min-width: 1150px)"
-                  srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)"
-                  srcset="img/logo-tablet.svg">
-          <img class="header-main__logo-img" src="img/logo-mobile.svg" alt="Логотип">
-        </picture>
+        <svg class="header-main__logo-desktop" width="148" height="73">
+          <use class="header-main__logo-desktop-part1" xlink:href="#icon-logo-desktop__part1"></use>
+          <use class="header-main__logo-desktop-part2" xlink:href="#icon-logo-desktop__part2"></use>
+        </svg>
+        <svg class="header-main__logo-tablet" width="112" height="46" viewBox="58 15 36 46.087">
+          <use class="header-main__logo-tablet-part1" xlink:href="#icon-logo-tablet__part1"></use>
+          <use class="header-main__logo-tablet-part2" xlink:href="#icon-logo-tablet__part2"></use>
+        </svg>
+        <svg class="header-main__logo-mobile" width="100" height="45" viewBox="55 20 45 46.087">
+          <use class="header-main__logo-mobile-part1" xlink:href="#icon-logo-mobile__part1"></use>
+        </svg>
       </a>
-      <button class="header-main__button" type="button" aria-label="Открыть/Закрыть меню"></button>
+      <button class="header-main__button header-main__button--opened header-main__button--none" type="button" aria-label="Открыть/Закрыть меню"></button>
     </div>
     <ul class="site-nav header-main__nav-items">
       <li class="site-nav__item">
@@ -30,11 +37,18 @@
     </ul>
     <ul class="user-nav header-main__nav-items">
       <li class="user-nav__item user-nav__item--decoration">
+        <svg class="user-nav__item-img" width="18" height="18">
+          <use class="user-nav__icon-search" xlink:href="#icon-search"></use>
+        </svg>
         <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
-        <img class="user-nav__item-img" src="img/icon-search.svg"></a>
+        </a>
       </li>
       <li class="user-nav__item user-nav__item--basket">
-        <a href="#" class="user-nav__link">Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
+        <a href="#" class="user-nav__link">
+          <svg class="user-nav__item-img" width="20" height="19">
+            <use class="user-nav__icon-cart" xlink:href="#icon-cart"></use>
+          </svg>
+          Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
       </li>
     </ul>
     <ul class="additional-nav">
@@ -53,16 +67,16 @@
         <h1 class="title intro__title">Милые штуки <span>ручной</span> работы для дома</h1>
       </div>
       <div class="intro__items">
-        <div class="intro__item intro__item--interior">
+        <a class="intro__item intro__item--interior" href="#">
           <div class="intro__wrapper">
             <p class="intro__item-description">Предметы интерьера</p>
           </div>
-        </div>
-        <div class="intro__item intro__item--toys">
+        </a>
+        <a class="intro__item intro__item--toys" href="#">
           <div class="intro__wrapper">
             <p class="intro__item-description">Детские игрушки</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <section class="products">
@@ -88,10 +102,16 @@
         </table>
         <div class="products__wrapper">
           <picture>
+            <source media="(min-width: 1150px)" type="image/webp"
+                    srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
             <source media="(min-width: 1150px)"
                     srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
             <source media="(min-width: 768px)"
                     srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp"
+                    srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <img class="products__img" src="img/triple-set-mobile@1x.jpg" alt="Товар"
                   srcset="img/triple-set-mobile@2x.jpg 2x">
           </picture>
@@ -147,10 +167,16 @@
       </div>
       <div id="map" class="map contacts__map">
         <picture>
+          <source media="(min-width: 1150px)" type="image/webp"
+                  srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
           <source media="(min-width: 1150px)"
                   srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
           <source media="(min-width: 768px)"
                   srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px)" type="image/webp"
+                  srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
           <img class="map__img" src="img/map-mobile@1x.jpg" alt="Карта"
                 srcset="img/map-mobile@2x.jpg 2x">
         </picture>
@@ -160,28 +186,38 @@
   <footer class="footer-main">
     <div class="footer-main__wrapper">
       <a class="footer-main__logo footer-main__logo--site-logo">
-        <img class="footer-main__logo" src="img/logo-mobile.svg" alt="Логотип">
+        <svg class="footer-main__logo-img" width="102" height="34">
+          <use class="footer-main__icon-logo" xlink:href="#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="social footer-main__social">
         <li class="social__item">
           <a class="social__item-link social__item-link--in" href="#">
-            <img class="social__item-img social__item-img--in" src="img/icon-insta.svg">
+            <svg class="social__item-img" width="22" height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__item-link social__item-link--fb" href="#">
-            <img class="social__item-img social__item-img--fb" src="img/icon-fb.svg">
+            <svg class="social__item-img" width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__item-link social__item-link--tw" href="#">
-            <img class="social__item-img social__item-img--tw" src="img/icon-twitter.svg">
+            <svg class="social__item-img" width="23" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="footer-main__address" href="#">
-        Разработано
-        <img class="footer-main__logo footer-main__logo--academy" src="img/logo-htmlacademy.svg" alt="Логотип">
+        <span>Разработано</span>
+        <svg class="footer-main__logo--academy" width="30" height="34">
+          <use class="footer-main__icon-logo-htmlacademy" xlink:href="#icon-logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
@@ -206,5 +242,7 @@
       <button class="button modal-products__button" type="button">добавить</button>
     </div>
   </div>
-  </body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLEj8o3O_cDSfK1gChBGZ_UARiM1trXG4&callback=initMap"></script>
+  <script src="js/all.js"></script>
+</body>
 </html>

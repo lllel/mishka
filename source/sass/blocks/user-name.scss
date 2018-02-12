@@ -21,6 +21,14 @@
   border-left: none;
   border-bottom: 2px solid $black-color;
 
+  &:hover {
+    border-color: $green-color-hsl5382;
+  }
+
+  &:focus {
+    border-color: $green-color-hsl5382;
+  }
+
   &::placeholder {
     font-size: $font-size-small;
     line-height: $line-height-any-small;
@@ -92,5 +100,9 @@
     width: 1120px;
     margin: 0 auto;
     padding-left: 50px;
+  }
+
+  .user-name__item {
+    padding-bottom: 24px;
   }
 }

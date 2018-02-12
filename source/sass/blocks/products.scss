@@ -1,18 +1,6 @@
 .products {
-  position: relative;
-  padding-bottom: 50px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 25px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
+  padding-bottom: 33px;
+  overflow: hidden;
 }
 
 .products__container {
@@ -92,6 +80,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 46px;
   }
 
   .products__wrapper {
@@ -154,11 +143,7 @@
     flex-direction: row-reverse;
     max-width: 1050px;
     margin: 0 auto;
-
-    &::after {
-      content: "";
-      left: 80px;
-    }
+    padding-bottom: 72px;
   }
 
   .products__container {
