@@ -97,7 +97,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-right: 379px;
     width: 668px;
   }
 
@@ -117,6 +116,7 @@
   }
 
   .products__description {
+    width: 285px;
     padding-top: 49px;
   }
 
@@ -127,6 +127,7 @@
   }
 
   .products__price {
+    width: 285px;
     padding: 42px 0 15px;
     font-size: $font-size-medium-big;
   }
@@ -150,8 +151,7 @@
     max-width: 1150px;
     width: 1150px;
     justify-content: center;
-    padding-left: 277px;
-    padding-right: 550px;
+    padding-left: 177px;
     margin: 0 auto;
   }
 

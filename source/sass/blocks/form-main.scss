@@ -12,11 +12,19 @@
 
 .form-main__button {
   margin-top: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-main__important {
+  font-size: $font-size-small-smallest;
+  line-height: $line-height-smallest;
+  color: $grey-color-hsl0;
 }
 
 @media (min-width: $tablet-width) {
   .form-main__info {
-    padding: 54px 50px 36px;
+    padding: 46px 50px 36px;
     font-size: $font-size-small;
     line-height: $line-height-big;
   }
@@ -57,7 +65,7 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0 175px;
-    padding-top: 120px;
+    padding-top: 113px;
   }
 
   .form-main__button {
@@ -67,5 +75,9 @@
   .form-main__important {
     margin-top: 38px;
     margin-right: 11px;
+  }
+
+  .footer-main--form {
+    margin-top: 50px;
   }
 }

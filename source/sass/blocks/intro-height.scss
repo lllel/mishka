@@ -1,0 +1,36 @@
+.intro-height {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 176px;
+  overflow: hidden;
+  background-color: $grey-color-hs0-95;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-height {
+    min-height: 234px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 102%;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      bottom: -14px;
+      transform: translateX(-50%);
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      z-index: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-height {
+    min-height: 263px;
+  }
+}

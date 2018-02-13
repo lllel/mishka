@@ -1,6 +1,6 @@
 .footer-main {
   padding: 20px 0 24px;
-  margin-top: 74px;
+  margin-top: 42px;
   background-color: $grey-color-hs0-95;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .footer-main__icon-logo-htmlacademy {
-  fill: #46c1ae;
+  fill: $green-color-hsl53;
 }
 
 .footer-main__logo--site-logo {
@@ -67,24 +67,18 @@
   }
 }
 
+.footer-main__address:hover .footer-main__icon-logo-htmlacademy {
+  fill: $green-color-hsl174;
+  transition: 0.2s ease;
+}
+
 .footer-main__address span {
   padding-right: 26px;
 }
 
-.form-main__important {
-  font-size: $font-size-small-smallest;
-  line-height: $line-height-smallest;
-  color: $grey-color-hsl0;
-}
-
-.form-main__button {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 @media (min-width: $tablet-width) {
   .footer-main {
-    margin-top: 105px;
+    margin-top: 62px;
     padding: 50px 0;
   }
 
@@ -123,5 +117,11 @@
   .footer-main__social::after {
     content: "";
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-main {
+    margin-top: 107px;
   }
 }

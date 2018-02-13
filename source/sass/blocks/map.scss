@@ -1,3 +1,9 @@
+@media (min-width: $tablet-width) {
+  .map {
+    height: 460px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .map {
     width: 525px;

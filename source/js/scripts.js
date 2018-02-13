@@ -46,7 +46,7 @@ buttonForModalMenu.addEventListener('keydown', function (evt) {
 var toOrderButton = document.querySelector('.products__buy');
 var modalProducts = document.querySelector('.modal-products');
 var modalProductsBtn = document.querySelector('.modal-products__button');
-var catalogItem = document.querySelectorAll('.catalog-item');
+var catalogItemIcon = document.querySelectorAll('.catalog-item__icon');
 
 function onModalProductsOpenClick() {
   modalProducts.classList.add('modal-products--opened');
@@ -76,8 +76,8 @@ if (modalProductsBtn) {
   modalProductsBtn.addEventListener('click', onModalProductsCloseClick);
 }
 
-if(catalogItem) {
-  [].forEach.call(catalogItem, function (it) {
+if(catalogItemIcon) {
+  [].forEach.call(catalogItemIcon, function (it) {
     it.addEventListener('click', onModalProductsOpenClick);
   });
 }

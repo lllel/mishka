@@ -50,7 +50,6 @@ gulp.task('copy', function () {
 gulp.task('style', function() {
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
-    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
@@ -58,7 +57,6 @@ gulp.task('style', function() {
     .pipe(gulp.dest('build/css'))
     .pipe(minify())
     .pipe(rename('style.min.css'))
-    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
@@ -77,10 +75,8 @@ gulp.task('html', function () {
 // Минификация и конкатенация js для продакшена
 gulp.task('jsOptimization', function (cd) {
   pump([gulp.src('source/js/*.js'),
-      // sourcemaps.init(),
       uglify(),
       concat('all.js'),
-      // sourcemaps.write(),
       gulp.dest('build/js')],
     server.reload(), cd);
 });

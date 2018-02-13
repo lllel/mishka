@@ -94,15 +94,21 @@
     width: 745px;
     padding-left: 30px;
     margin-left: 126px;
+    margin-bottom: 2px;
   }
 
   .user-name__container {
     width: 1120px;
     margin: 0 auto;
     padding-left: 50px;
+    padding-bottom: 9px;
   }
 
   .user-name__item {
     padding-bottom: 24px;
+  }
+
+  .user-name__input {
+    padding: 16px 10px;
   }
 }
