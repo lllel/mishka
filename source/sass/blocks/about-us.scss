@@ -3,6 +3,7 @@
 
   position: relative;
   padding-top: 17px;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -198,7 +199,7 @@
 
     &::after {
       content: "";
-      height: 30px;
+      height: 50px;
     }
   }
 

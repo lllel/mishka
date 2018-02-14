@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 <body>
   <div style="display: none">
@@ -62,23 +64,25 @@
     <a href="#" class="header-main__delivery">Бесплатная доставка по России</a>
   </header>
   <main class="main">
-    <section class="intro">
-      <div class="intro__wrapper">
-        <h1 class="title intro__title">Милые штуки <span>ручной</span> работы для дома</h1>
-      </div>
-      <div class="intro__items">
-        <a class="intro__item intro__item--interior" href="#">
-          <div class="intro__wrapper">
-            <p class="intro__item-description">Предметы интерьера</p>
-          </div>
-        </a>
-        <a class="intro__item intro__item--toys" href="#">
-          <div class="intro__wrapper">
-            <p class="intro__item-description">Детские игрушки</p>
-          </div>
-        </a>
-      </div>
-    </section>
+    <div class="ie-flex-bugs-container">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h1 class="title intro__title">Милые штуки <span>ручной</span> работы для дома</h1>
+        </div>
+        <div class="intro__items">
+          <a class="intro__item intro__item--interior" href="#">
+            <div class="intro__wrapper">
+              <p class="intro__item-description">Предметы интерьера</p>
+            </div>
+          </a>
+          <a class="intro__item intro__item--toys" href="#">
+            <div class="intro__wrapper">
+              <p class="intro__item-description">Детские игрушки</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
     <section class="products">
       <h2 class="title products__title">Вязаные корзинки</h2>
       <p class="products__feature">Товар недели</p>
@@ -213,7 +217,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer-main__address" href="#">
+      <a class="footer-main__address" href="https://up.htmlacademy.ru/adaptive/13">
         <span>Разработано</span>
         <svg class="footer-main__logo--academy" width="30" height="34">
           <use class="footer-main__icon-logo-htmlacademy" xlink:href="#icon-logo-htmlacademy"></use>
