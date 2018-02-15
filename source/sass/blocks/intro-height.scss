@@ -7,6 +7,13 @@
   background-color: $grey-color-hs0-95;
 }
 
+.intro-height__title {
+  margin: auto;
+  text-align: center;
+  padding: 70px 0;
+  z-index: 3;
+}
+
 @media (min-width: $tablet-width) {
   .intro-height {
     min-height: 234px;
@@ -27,10 +34,28 @@
       z-index: 5;
     }
   }
+
+  .intro-height__title {
+    width: 550px;
+    padding-top: 152px;
+  }
+
+  .intro-height__title--padding {
+    padding-top: 78px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .intro-height {
     min-height: 263px;
+
+    &::before {
+      content: "";
+      height: 60px;
+    }
+  }
+
+  .intro-height__title--padding {
+    padding-top: 50px;
   }
 }
