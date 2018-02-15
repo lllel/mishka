@@ -37,6 +37,11 @@
   }
 }
 
+.radio__input:focus + .radio__label::after {
+  content: "";
+  border-color: $green-color-hsl5382;
+}
+
 .radio__input:checked + .radio__label {
   &::before {
     content: "";
