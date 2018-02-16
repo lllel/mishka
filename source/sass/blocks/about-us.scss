@@ -25,6 +25,7 @@
 }
 
 .about-us__item {
+  width: 98%;
   padding: 64px 0 19px;
   font-size: $font-size-small;
   line-height: $line-height-medium;
@@ -141,6 +142,7 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding-top: 40px;
+    padding-left: 45px;
 
     &::after {
       content: "";
@@ -149,6 +151,7 @@
   }
 
   .about-us__title {
+    margin-top: 32px;
     font-size: $font-size-any-big;
   }
 
@@ -157,11 +160,13 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 94%;
+    padding-left: 5px;
   }
 
   .about-us__item {
-    padding-bottom: 49px;
-    width: 50%;
+    padding: 65px 0 49px;
+    width: 47%;
     font-size: $font-size-medium-big;
     line-height: $line-height-any-medium;
   }
@@ -199,7 +204,11 @@
 
     &::after {
       content: "";
+      width: 1085px;
       height: 50px;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -210,18 +219,67 @@
   }
 
   .about-us__title {
+    margin: 44px 0 38px;
     padding-top: 23px;
-    padding-left: 53px;
+    padding-left: 58px;
     font-size: $font-size-very-big;
   }
 
   .about-us__items {
     justify-content: space-around;
-    padding-left: 47px;
-    padding-right: 63px;
+    padding-left: 35px;
+    padding-right: 39px;
   }
 
   .about-us__item {
-    width: 330px;
+    width: 294px;
+  }
+
+  .about-us__item--flower {
+    &::after {
+      content: "";
+      left: 8px;
+      top: 7px;
+    }
+  }
+
+  .about-us__item--clew {
+    &::after {
+      content: "";
+      left: 3px;
+      top: 11px;
+    }
+  }
+
+  .about-us__item--money {
+    &::after {
+      content: "";
+      left: 0;
+      top: 9px;
+    }
+  }
+
+  .about-us__item--rocket {
+    &::after {
+      content: "";
+      left: -6px;
+      top: 12px;
+    }
+  }
+
+  .about-us__item--heart {
+    &::after {
+      content: "";
+      left: 8px;
+      top: 13px;
+    }
+  }
+
+  .about-us__item--gift {
+    &::after {
+      content: "";
+      left: 3px;
+      top: 9px;
+    }
   }
 }

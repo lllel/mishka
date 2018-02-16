@@ -13,6 +13,9 @@
   &:active + .checkbox__label::after {
     border-color: $grey-color-hs199;
     transition: 0.2s ease;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

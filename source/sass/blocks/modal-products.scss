@@ -1,11 +1,11 @@
 .modal-products {
   display: none;
-  position: absolute;
-  top: 1369px;
+  position: fixed;
+  top: 50%;
   left: 50%;
   width: 320px;
   padding: 24px 0 46px;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: $white-color;
   box-shadow: 0 9px 28px -8px grey;
   z-index: 10;

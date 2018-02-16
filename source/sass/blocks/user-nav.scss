@@ -150,6 +150,12 @@
     position: relative;
     width: 275px;
   }
+
+  .user-nav__item-img {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -165,5 +171,9 @@
 
   .user-nav__link {
     padding-right: 0;
+  }
+
+  .user-nav__item-img {
+    top: 36px;
   }
 }

@@ -9,6 +9,9 @@
   height: 140px;
   margin-top: 25px;
   border: 2px solid $grey-color-hsl0;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  color: $grey-color-hsl0;
 
   &:focus {
     border-color: $green-color-hsl5382;
@@ -51,7 +54,9 @@
   }
 
   .user-order__input {
-    margin-top: 53px;
+    margin-top: 51px;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
 
     &::placeholder {
       font-size: $font-size-medium;
@@ -66,6 +71,11 @@
     margin-top: 50px;
     margin-left: 129px;
     padding-left: 32px;
+  }
+
+  .user-order__title {
+    margin-top: 55px;
+    margin-left: 45px;
   }
 
   .user-order__input {
