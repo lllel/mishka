@@ -37,6 +37,7 @@
   .form-main__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
   }
 
   .form-main__button {
@@ -48,8 +49,9 @@
   }
 
   .form-main__important {
+    max-width: 60%;
     margin-right: 0;
-    margin-top: 43px;
+    margin-top: 44px;
     font-size: $font-size-small;
     line-height: $line-height-big;
   }

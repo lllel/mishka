@@ -15,15 +15,15 @@
   <header class="header-main">
     <div class="header-main__wrapper">
       <a class="logo header-main__logo" href="index.html">
-        <svg class="header-main__logo-desktop" width="148" height="73">
+        <svg class="header-main__logo-desktop" width="148" height="73" aria-label="Логотип Мишка">
           <use class="header-main__logo-desktop-part1" xlink:href="#icon-logo-desktop__part1"></use>
           <use class="header-main__logo-desktop-part2" xlink:href="#icon-logo-desktop__part2"></use>
         </svg>
-        <svg class="header-main__logo-tablet" width="112" height="46" viewBox="58 15 36 46.087">
+        <svg class="header-main__logo-tablet" width="112" height="46" viewBox="58 15 36 46.087" aria-label="Логотип Мишка">
           <use class="header-main__logo-tablet-part1" xlink:href="#icon-logo-tablet__part1"></use>
           <use class="header-main__logo-tablet-part2" xlink:href="#icon-logo-tablet__part2"></use>
         </svg>
-        <svg class="header-main__logo-mobile" width="100" height="45" viewBox="55 20 45 46.087">
+        <svg class="header-main__logo-mobile" width="100" height="45" viewBox="55 20 45 46.087" aria-label="Логотип Мишка">
           <use class="header-main__logo-mobile-part1" xlink:href="#icon-logo-mobile__part1"></use>
         </svg>
       </a>
@@ -39,7 +39,7 @@
     </ul>
     <ul class="user-nav header-main__nav-items">
       <li class="user-nav__item user-nav__item--decoration">
-        <svg class="user-nav__item-img" width="18" height="18">
+        <svg class="user-nav__item-img" width="18" height="18" aria-label="Поиск по сайту">
           <use class="user-nav__icon-search" xlink:href="#icon-search"></use>
         </svg>
         <a href="#" class="user-nav__link"><span class="user-nav__link-search">Поиск по сайту</span>
@@ -47,7 +47,7 @@
       </li>
       <li class="user-nav__item user-nav__item--basket">
         <a href="#" class="user-nav__link">
-          <svg class="user-nav__item-img" width="20" height="19">
+          <svg class="user-nav__item-img" width="20" height="19" aria-label="Корзина">
             <use class="user-nav__icon-cart" xlink:href="#icon-cart"></use>
           </svg>
           Корзина: <span class="user-nav__link-basket">пока пуста</span></a>
@@ -90,9 +90,11 @@
             <a class="catalog-item__title" href="#">Зайчик-попрыгайчик</a>
             <p class="catalog-item__size">Рост 30 см, вес 200 г</p>
             <a class="catalog-item__price" href="#">1 200 руб.</a>
-            <svg class="catalog-item__icon" width="20" height="19">
-              <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
-            </svg>
+            <a class="catalog-item__button" href="#">
+              <svg class="catalog-item__icon" width="20" height="19" aria-label="Заказать товар">
+                <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </div>
         </article>
         <article class="catalog-item catalog-items__item">
@@ -114,9 +116,11 @@
             <a class="catalog-item__title" href="#">Корзинка для белья</a>
             <p class="catalog-item__size">Диаметр 15 см, высота 10 см</p>
             <a class="catalog-item__price" href="#">690 руб.</a>
-            <svg class="catalog-item__icon" width="20" height="19">
-              <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
-            </svg>
+            <a class="catalog-item__button" href="#">
+              <svg class="catalog-item__icon" width="20" height="19" aria-label="Заказать товар">
+                <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </div>
         </article>
         <article class="catalog-item catalog-items__item">
@@ -138,9 +142,11 @@
             <a class="catalog-item__title" href="#">Большая корзинка для игрушек</a>
             <p class="catalog-item__size">Диаметр 30 см, высота 30 см</p>
             <a class="catalog-item__price" href="#">1 500 руб.</a>
-            <svg class="catalog-item__icon" width="20" height="19">
-              <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
-            </svg>
+            <a class="catalog-item__button" href="#">
+              <svg class="catalog-item__icon" width="20" height="19" aria-label="Заказать товар">
+                <use class="catalog-item__icon-cart" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </div>
         </article>
       </div>
@@ -169,7 +175,7 @@
           <p class="process__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <button class="button process__button" type="button">сделать заказ</button>
+          <a class="button process__button" href="#" type="button">сделать заказ</a>
         </div>
       </div>
     </section>
@@ -177,28 +183,28 @@
   <footer class="footer-main footer-main--catalog">
     <div class="footer-main__wrapper">
       <a class="footer-main__logo footer-main__logo--site-logo">
-        <svg class="footer-main__logo-img" width="102" height="34">
+        <svg class="footer-main__logo-img" width="102" height="34" aria-label="Логотип Мишка">
           <use class="footer-main__icon-logo" xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social footer-main__social">
         <li class="social__item">
           <a class="social__item-link social__item-link--in" href="#">
-            <svg class="social__item-img" width="22" height="21">
+            <svg class="social__item-img" width="22" height="21" aria-label="Переход в инстаграмм">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__item-link social__item-link--fb" href="#">
-            <svg class="social__item-img" width="15" height="28">
+            <svg class="social__item-img" width="15" height="28" aria-label="Переход в фэйсбук">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__item-link social__item-link--tw" href="#">
-            <svg class="social__item-img" width="23" height="20">
+            <svg class="social__item-img" width="23" height="20" aria-label="Переход в твиттер">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -206,32 +212,32 @@
       </ul>
       <a class="footer-main__address" href="https://up.htmlacademy.ru/adaptive/13">
         <span>Разработано</span>
-        <svg class="footer-main__logo-academy" width="30" height="34">
+        <svg class="footer-main__logo-academy" width="30" height="34" aria-label="Переход в htmlacademy">
           <use class="footer-main__icon-logo-htmlacademy" xlink:href="#icon-logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
   <div class="modal-products">
-    <div class="modal-products__wrapper">
+    <form class="modal-products__wrapper" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="title modal-products__title">добавить в корзину</h2>
       <p class="modal-products__size">Выберите размер:</p>
       <div class="modal-products__size-items">
         <p class="modal-checkbox modal-products__size-item">
-          <input id="size-s" class="modal-checkbox__input" type="checkbox">
+          <input id="size-s" class="modal-checkbox__input" type="checkbox" name="checkbox-S">
           <label class="modal-checkbox__label modal-checkbox__label--size-s" for="size-s"><span>S</span></label>
         </p>
         <p class="modal-checkbox modal-products__size-item">
-          <input id="size-m" class="modal-checkbox__input" type="checkbox">
+          <input id="size-m" class="modal-checkbox__input" type="checkbox" name="checkbox-M">
           <label class="modal-checkbox__label modal-checkbox__label--size-m" for="size-m"><span>M</span></label>
         </p>
         <p class="modal-checkbox modal-products__size-item">
-          <input id="size-l" class="modal-checkbox__input" type="checkbox">
+          <input id="size-l" class="modal-checkbox__input" type="checkbox" name="checkbox-L">
           <label class="modal-checkbox__label modal-checkbox__label--size-l" for="size-l"><span>L</span></label>
         </p>
       </div>
-      <button class="button modal-products__button" type="button">добавить</button>
-    </div>
+      <button class="button modal-products__button" type="submit">добавить</button>
+    </form>
   </div>
   <script src="js/all.js"></script>
 </body>

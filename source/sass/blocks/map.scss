@@ -1,3 +1,7 @@
+.map {
+  background-color: #f9ead7;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     height: 460px;
@@ -8,6 +12,6 @@
   .map {
     width: 525px;
     height: 460px;
-    margin-top: auto;
+    margin-top: 12px;
   }
 }

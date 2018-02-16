@@ -34,6 +34,9 @@
   border-right: none;
   border-left: none;
   border-bottom: 2px solid $black-color;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  color: $grey-color-hsl0;
 
   &::placeholder {
     font-size: $font-size-small;
@@ -67,6 +70,8 @@
   .user-email__input {
     padding-right: 65px;
     background-color: transparent;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
 
     &::placeholder {
       font-size: $font-size-medium;
@@ -104,7 +109,7 @@
 
 @media (min-width: $desktop-width) {
   .user-email {
-    padding-bottom: 51px;
+    padding-bottom: 49px;
   }
 
   .user-email__wrapper {

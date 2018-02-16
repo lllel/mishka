@@ -7,13 +7,27 @@
   @include visually-hidden();
 
   &:hover + .radio__label::after {
+    content: "";
     border-color: $green-color-hsl5382;
     transition: 0.2s ease;
   }
 
   &:active + .radio__label::after {
+    content: "";
     border-color: $grey-color-hs199;
     transition: 0.2s ease;
+  }
+
+  &:active + .radio__label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -53px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $green-color-hsl5382;
   }
 }
 
@@ -75,6 +89,13 @@
   }
 
   .radio__input:checked + .radio__label {
+    &::before {
+      content: "";
+      left: -65px;
+    }
+  }
+
+  .radio__input:active + .radio__label {
     &::before {
       content: "";
       left: -65px;

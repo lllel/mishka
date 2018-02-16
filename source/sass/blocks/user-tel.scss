@@ -34,6 +34,9 @@
   border-right: none;
   border-left: none;
   border-bottom: 2px solid $black-color;
+  font-size: $font-size-small;
+  line-height: $line-height-any-small;
+  color: $grey-color-hsl0;
 
   &::placeholder {
     font-size: $font-size-small;
@@ -66,6 +69,8 @@
   .user-tel__input {
     padding-right: 65px;
     background-color: transparent;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
 
     &::placeholder {
       font-size: $font-size-medium;
@@ -84,7 +89,7 @@
 
   .user-tel__container {
     width: 100%;
-    padding-top: 48px;
+    padding-top: 44px;
   }
 
   .user-tel__icon {
