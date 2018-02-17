@@ -4,71 +4,47 @@
   font-weight: $font-weight-bold;
   list-style-type: none;
   border-top: 1px solid $grey-color-hsl00;
-}
 
-.user-nav__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 26px 0 26px 75px;
-  text-align: left;
-  color: $black-color;
-  text-decoration: none;
-  transition: 0.2s ease;
+  .user-nav__link {
+    width: 100%;
+    height: 100%;
+    padding: 26px 0 26px 75px;
+    text-align: left;
+    color: $black-color;
+    text-decoration: none;
+    transition: 0.2s ease;
 
-  &:hover {
-    color: #8d8d8d;
+    &:hover {
+      color: rgba($black-color, 0.5);
+    }
+
+    &:active {
+      color: rgba($black-color, 0.3);
+    }
   }
 }
 
-.user-nav__icon-search {
-  fill: #c7c7c7;
-}
-
+.user-nav__icon-search,
 .user-nav__icon-cart {
   fill: #c7c7c7;
 }
 
-.user-nav__item--decoration {
-  position: relative;
-}
-
-.user-nav__item--decoration:hover {
-  transition: 0.2s ease;
-
-  .user-nav__icon-search {
-    fill: $green-color-hsl5382;
-  }
-}
-
-.user-nav__item--decoration:active {
-  opacity: 0.3;
-  transition: 0.2s ease;
-
-  .user-nav__icon-search {
-    fill: $green-color-hsl5382;
-  }
-}
-
+.user-nav__item--decoration,
 .user-nav__item--basket {
   position: relative;
 }
 
-.user-nav__item--basket:hover {
-  transition: 0.2s ease;
-
-  .user-nav__icon-cart {
-    fill: $green-color-hsl5382;
-  }
-}
-
-.user-nav__item--basket:active {
+.user-nav__item--basket:active .user-nav__icon-cart,
+.user-nav__item--decoration:active .user-nav__icon-search {
+  fill: $green-color-hsl5382;
   opacity: 0.3;
   transition: 0.2s ease;
+}
 
-  .user-nav__icon-cart {
-    fill: $green-color-hsl5382;
-  }
+.user-nav__item--basket:hover .user-nav__icon-cart,
+.user-nav__item--decoration:hover .user-nav__icon-search {
+  fill: $green-color-hsl5382;
+  transition: 0.2s ease;
 }
 
 .user-nav__item-img {
@@ -108,8 +84,9 @@
   }
 
   .user-nav__item--decoration {
-    position: relative;
     width: 83px;
+    border-left: 1px solid $grey-color-hsl00;
+    border-right: 1px solid $grey-color-hsl00;
 
     .user-nav__link {
       display: flex;
@@ -117,32 +94,9 @@
       justify-content: center;
       padding-right: 0;
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      height: 100%;
-      width: 1px;
-      background-color: $grey-color-hsl00;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      height: 100%;
-      width: 1px;
-      background-color: $grey-color-hsl00;
-    }
   }
 
   .user-nav__item--basket {
-    position: relative;
     width: 275px;
   }
 
