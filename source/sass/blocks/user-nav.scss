@@ -17,11 +17,7 @@
   transition: 0.2s ease;
 
   &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.2;
+    color: #8d8d8d;
   }
 }
 
@@ -38,7 +34,6 @@
 }
 
 .user-nav__item--decoration:hover {
-  opacity: 0.7;
   transition: 0.2s ease;
 
   .user-nav__icon-search {
@@ -47,11 +42,11 @@
 }
 
 .user-nav__item--decoration:active {
+  opacity: 0.3;
   transition: 0.2s ease;
 
   .user-nav__icon-search {
     fill: $green-color-hsl5382;
-    opacity: 0.3;
   }
 }
 
@@ -68,11 +63,11 @@
 }
 
 .user-nav__item--basket:active {
+  opacity: 0.3;
   transition: 0.2s ease;
 
   .user-nav__icon-cart {
     fill: $green-color-hsl5382;
-    opacity: 0.3;
   }
 }
 
