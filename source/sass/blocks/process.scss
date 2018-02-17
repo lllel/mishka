@@ -5,6 +5,15 @@
   padding-bottom: 34px;
   border: 1px solid $grey-color-hs0-93;
   z-index: 5;
+
+  &:hover {
+    box-shadow: 0 9px 24px -13px grey;
+    transition: 0.2s ease;
+  }
+
+  &:active {
+    box-shadow: 0 9px 15px -13px grey;
+  }
 }
 
 .process__container {
@@ -127,7 +136,7 @@
 @media (min-width: $desktop-width) {
   .process__wrapper {
     position: relative;
-    width: 1050px;
+    width: 1040px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -137,15 +146,15 @@
   }
 
   .process__container {
-    width: 350px;
-    padding-left: 69px;
+    width: 360px;
+    padding-left: 75px;
     border: 1px solid $grey-color-hs0-93;
     border-left: none;
 
     &::after {
       content: "";
       top: 40px;
-      left: 72px;
+      left: 77px;
     }
   }
 
