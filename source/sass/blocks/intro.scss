@@ -61,11 +61,6 @@
   }
 }
 
-.intro__item--interior:hover {
-  transform: translateY(-5px);
-  transition: 0.2s ease;
-}
-
 .intro__item--interior:active {
   transition: 0.2s ease;
 
@@ -95,11 +90,6 @@
     background-image: url("../img/toy.svg");
     background-repeat: no-repeat;
   }
-}
-
-.intro__item--toys:hover {
-  transform: translateY(-5px);
-  transition: 0.2s ease;
 }
 
 .intro__item--toys:active {
@@ -159,6 +149,16 @@
         background-position: center;
       }
     }
+  }
+
+  .intro__item--interior:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+  }
+
+  .intro__item--toys:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease;
   }
 
   .intro__wrapper {

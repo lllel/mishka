@@ -32,8 +32,13 @@
   text-align: center;
 }
 
+.header-main__logo-mobile {
+  pointer-events: none;
+}
+
 .header-main__logo-tablet {
   display: none;
+  pointer-events: none;
 }
 
 .header-main__logo-tablet-part2 {
@@ -42,6 +47,7 @@
 
 .header-main__logo-desktop {
   display: none;
+  pointer-events: none;
 }
 
 .header-main__logo-desktop-part2 {

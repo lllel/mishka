@@ -34,6 +34,10 @@
   }
 }
 
+.footer-main__logo-img {
+  pointer-events: none;
+}
+
 .footer-main__social {
   position: relative;
 
@@ -65,6 +69,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.footer-main__logo-academy {
+  pointer-events: none;
 }
 
 .footer-main__address:hover .footer-main__icon-logo-htmlacademy {
