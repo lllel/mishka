@@ -12,7 +12,7 @@
     height: 14px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     background-position: center;
     position: absolute;
     left: 0;
@@ -41,16 +41,21 @@
   position: relative;
   order: 1;
 
+  br {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 10px;
+    left: -11px;
+    top: -8px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-flower.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -61,13 +66,14 @@
   &::after {
     content: "";
     position: absolute;
-    left: 3px;
-    top: 14px;
+    left: -15px;
+    top: -6px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-ball.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -75,16 +81,21 @@
   position: relative;
   order: 1;
 
+  br {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 12px;
+    left: -12px;
+    top: -12px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-money.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -95,13 +106,14 @@
   &::after {
     content: "";
     position: absolute;
-    left: -5px;
-    top: 15px;
+    left: -14px;
+    top: -11px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-rocket.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -109,16 +121,21 @@
   position: relative;
   order: 1;
 
+  br {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 17px;
+    left: -12px;
+    top: -6px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-heart.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -126,16 +143,21 @@
   position: relative;
   order: 1;
 
+  br {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    left: 3px;
-    top: 13px;
+    left: -16px;
+    top: -8px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url("../img/feature-gift.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -146,7 +168,7 @@
 
     &::after {
       content: "";
-      height: 30px;
+      height: 45px;
     }
   }
 
@@ -165,7 +187,7 @@
   }
 
   .about-us__item {
-    padding: 65px 0 49px;
+    padding: 68px 0 43px;
     width: 47%;
     font-size: $font-size-medium-big;
     line-height: $line-height-any-medium;
@@ -173,26 +195,78 @@
 
   .about-us__item--flower {
     order: 1;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      left: 8px;
+      top: 14px;
+    }
   }
 
   .about-us__item--clew {
     order: 2;
+
+    &::after {
+      content: "";
+      left: 4px;
+      top: 16px;
+    }
   }
 
   .about-us__item--money {
     order: 3;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      left: 0;
+      top: 15px;
+    }
   }
 
   .about-us__item--rocket {
     order: 4;
+
+    &::after {
+      content: "";
+      left: -4px;
+      top: 18px;
+    }
   }
 
   .about-us__item--heart {
     order: 5;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      left: 8px;
+      top: 20px;
+    }
   }
 
   .about-us__item--gift {
     order: 6;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      left: 4px;
+      top: 16px;
+    }
   }
 }
 
@@ -239,31 +313,31 @@
     &::after {
       content: "";
       left: 8px;
-      top: 7px;
+      top: 11px;
     }
   }
 
   .about-us__item--clew {
     &::after {
       content: "";
-      left: 3px;
-      top: 11px;
+      left: 4px;
+      top: 15px;
     }
   }
 
   .about-us__item--money {
     &::after {
       content: "";
-      left: 0;
-      top: 9px;
+      left: 1px;
+      top: 14px;
     }
   }
 
   .about-us__item--rocket {
     &::after {
       content: "";
-      left: -6px;
-      top: 12px;
+      left: -4px;
+      top: 18px;
     }
   }
 
@@ -271,15 +345,15 @@
     &::after {
       content: "";
       left: 8px;
-      top: 13px;
+      top: 20px;
     }
   }
 
   .about-us__item--gift {
     &::after {
       content: "";
-      left: 3px;
-      top: 9px;
+      left: 4px;
+      top: 17px;
     }
   }
 }

@@ -13,6 +13,7 @@
   font-size: $font-size-small;
   line-height: $line-height-any-small;
   color: $grey-color-hsl0;
+  overflow: hidden;
 
   &:focus {
     border-color: $green-color-hsl5382;
