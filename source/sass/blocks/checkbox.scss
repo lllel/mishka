@@ -66,3 +66,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox__label {
+    &::after {
+      content: "";
+      top: -13px;
+      left: -80px;
+    }
+  }
+}

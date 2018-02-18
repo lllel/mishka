@@ -173,7 +173,7 @@
   }
 
   .about-us__title {
-    margin-top: 32px;
+    margin-top: 39px;
     font-size: $font-size-any-big;
   }
 
@@ -202,8 +202,8 @@
 
     &::after {
       content: "";
-      left: 8px;
-      top: 14px;
+      left: -10px;
+      top: -3px;
     }
   }
 
@@ -212,8 +212,8 @@
 
     &::after {
       content: "";
-      left: 4px;
-      top: 16px;
+      left: -15px;
+      top: -1px;
     }
   }
 
@@ -226,8 +226,8 @@
 
     &::after {
       content: "";
-      left: 0;
-      top: 15px;
+      left: -11px;
+      top: -7px;
     }
   }
 
@@ -236,8 +236,8 @@
 
     &::after {
       content: "";
-      left: -4px;
-      top: 18px;
+      left: -13px;
+      top: -6px;
     }
   }
 
@@ -250,8 +250,8 @@
 
     &::after {
       content: "";
-      left: 8px;
-      top: 20px;
+      left: -10px;
+      top: -1px;
     }
   }
 
@@ -264,8 +264,8 @@
 
     &::after {
       content: "";
-      left: 4px;
-      top: 16px;
+      left: -15px;
+      top: -3px;
     }
   }
 }
@@ -312,48 +312,48 @@
   .about-us__item--flower {
     &::after {
       content: "";
-      left: 8px;
-      top: 11px;
+      left: -11px;
+      top: -6px;
     }
   }
 
   .about-us__item--clew {
     &::after {
       content: "";
-      left: 4px;
-      top: 15px;
+      left: -14px;
+      top: -4px;
     }
   }
 
   .about-us__item--money {
     &::after {
       content: "";
-      left: 1px;
-      top: 14px;
+      left: -12px;
+      top: -7px;
     }
   }
 
   .about-us__item--rocket {
     &::after {
       content: "";
-      left: -4px;
-      top: 18px;
+      left: -13px;
+      top: -6px;
     }
   }
 
   .about-us__item--heart {
     &::after {
       content: "";
-      left: 8px;
-      top: 20px;
+      left: -11px;
+      top: 0;
     }
   }
 
   .about-us__item--gift {
     &::after {
       content: "";
-      left: 4px;
-      top: 17px;
+      left: -14px;
+      top: -3px;
     }
   }
 }
