@@ -39,11 +39,8 @@
 
 .about-us__item--flower {
   position: relative;
+  padding-right: 60px;
   order: 1;
-
-  br {
-    display: none;
-  }
 
   &::after {
     content: "";
@@ -79,17 +76,14 @@
 
 .about-us__item--money {
   position: relative;
+  padding-right: 40px;
   order: 1;
-
-  br {
-    display: none;
-  }
 
   &::after {
     content: "";
     position: absolute;
     left: -12px;
-    top: -12px;
+    top: -13px;
     display: block;
     width: 70px;
     height: 70px;
@@ -119,11 +113,8 @@
 
 .about-us__item--heart {
   position: relative;
+  padding-right: 60px;
   order: 1;
-
-  br {
-    display: none;
-  }
 
   &::after {
     content: "";
@@ -141,11 +132,8 @@
 
 .about-us__item--gift {
   position: relative;
+  padding-right: 20px;
   order: 1;
-
-  br {
-    display: none;
-  }
 
   &::after {
     content: "";
@@ -168,7 +156,7 @@
 
     &::after {
       content: "";
-      height: 45px;
+      height: 46px;
     }
   }
 
@@ -195,10 +183,7 @@
 
   .about-us__item--flower {
     order: 1;
-
-    br {
-      display: block;
-    }
+    padding-right: 70px;
 
     &::after {
       content: "";
@@ -219,10 +204,7 @@
 
   .about-us__item--money {
     order: 3;
-
-    br {
-      display: block;
-    }
+    padding-right: 45px;
 
     &::after {
       content: "";
@@ -243,10 +225,7 @@
 
   .about-us__item--heart {
     order: 5;
-
-    br {
-      display: block;
-    }
+    padding-right: 65px;
 
     &::after {
       content: "";
@@ -257,10 +236,7 @@
 
   .about-us__item--gift {
     order: 6;
-
-    br {
-      display: block;
-    }
+    padding-right: 25px;
 
     &::after {
       content: "";

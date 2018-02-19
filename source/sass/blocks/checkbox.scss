@@ -6,17 +6,24 @@
   @include visually-hidden();
 
   &:hover + .checkbox__label::after {
+    content: "";
     border-color: $green-color-hsl5382;
     transition: 0.2s ease;
   }
 
   &:active + .checkbox__label::after {
+    content: "";
     border-color: $grey-color-hs199;
     transition: 0.2s ease;
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.checkbox__input:checked:active + .checkbox__label::after {
+  content: "";
+  background-image: none;
 }
 
 .checkbox__label {
@@ -71,8 +78,8 @@
   .checkbox__label {
     &::after {
       content: "";
-      top: -13px;
-      left: -80px;
+      top: -14px;
+      left: -78px;
     }
   }
 }
