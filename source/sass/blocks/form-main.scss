@@ -4,7 +4,7 @@
 
 .form-main__info {
   padding: 0 30px;
-  padding-top: 9px;
+  padding-top: 13px;
   font-size: $font-size-smallest;
   line-height: $line-height-small-big;
   color: $grey-color-hsl0;
@@ -72,11 +72,12 @@
 
   .form-main__button {
     margin-top: 33px;
+    margin-left: 6px;
   }
 
   .form-main__important {
     margin-top: 38px;
-    margin-right: 11px;
+    margin-right: 5px;
   }
 
   .footer-main--form {
